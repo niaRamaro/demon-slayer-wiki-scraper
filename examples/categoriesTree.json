@@ -1,0 +1,124 @@
+[
+  { "category": "Abilities", "subCategories": ["Breathing Styles"] },
+  { "category": "Battles", "subCategories": ["Battles by Character"] },
+  {
+    "category": "Characters",
+    "subCategories": [
+      "Animals",
+      "Antagonists",
+      "Deceased",
+      "Demon",
+      "Demon Slayers",
+      "Descendants",
+      "Female Characters",
+      "Giyu Tomioka: Gaiden Characters",
+      "Groups",
+      "Male Characters",
+      "Marechi",
+      "Protagonists",
+      "Ubuyashiki Family"
+    ]
+  },
+  {
+    "category": "Groups",
+    "subCategories": [
+      "Antagonist Groups",
+      "Kakushi",
+      "Kamado Family",
+      "Organizations",
+      "Rengoku Family",
+      "Swordsmith Village Residents"
+    ]
+  },
+  {
+    "category": "Locations",
+    "subCategories": ["Brothels", "Districts", "Mountains"]
+  },
+  { "category": "Relationships", "subCategories": [] },
+  {
+    "category": "Story Arcs",
+    "subCategories": [
+      "Asakusa Arc",
+      "Entertainment District Arc",
+      "Final Selection Arc",
+      "First Mission Arc",
+      "Hashira Training Arc",
+      "Infinity Castle Arc",
+      "Mugen Train Arc",
+      "Natagumo Mountain Arc",
+      "Rehabilitation Training Arc",
+      "Sunrise Countdown Arc",
+      "Swordsmith Village Arc",
+      "Tsuzumi Mansion Arc"
+    ]
+  },
+  { "category": "Synopses", "subCategories": [] },
+  {
+    "category": "Battles by Character",
+    "subCategories": [
+      "Akaza Battles",
+      "Daki Battles",
+      "Doma Battles",
+      "Enmu Battles",
+      "Genya Shinazugawa Battles",
+      "Giyu Tomioka Battles",
+      "Gyokko Battles",
+      "Gyomei Himejima Battles",
+      "Gyutaro Battles",
+      "Hand Demon Battles",
+      "Hantengu Battles",
+      "Horned Demon Battles",
+      "Inosuke Hashibira Battles",
+      "Kaigaku Battles",
+      "Kanao Tsuyuri Battles",
+      "Kokushibo Battles",
+      "Kyogai Battles",
+      "Kyojuro Rengoku Battles",
+      "Mitsuri Kanroji Battles",
+      "Muichiro Tokito Battles",
+      "Muzan Kibutsuji Battles",
+      "Nezuko Kamado Battles",
+      "Obanai Iguro Battles",
+      "Rui Battles",
+      "Sabito Battles",
+      "Sanemi Shinazugawa Battles",
+      "Shinobu Kocho Battles",
+      "Spider Demon (Daughter) Battles",
+      "Spider Demon (Father) Battles",
+      "Spider Demon (Mother) Battles",
+      "Spider Demon (Son) Battles",
+      "Susamaru Battles",
+      "Swamp Demon Battles",
+      "Tamayo Battles",
+      "Tanjiro Kamado Battles",
+      "Temple Demon Battles",
+      "Tengen Uzui Battles",
+      "Tongue Demon Battles",
+      "Yahaba Battles",
+      "Yushiro Battles",
+      "Zenitsu Agatsuma Battles"
+    ]
+  },
+  { "category": "Antagonists", "subCategories": ["Antagonist Groups"] },
+  { "category": "Demon", "subCategories": ["Spider Family", "Twelve Kizuki"] },
+  {
+    "category": "Demon Slayers",
+    "subCategories": ["Former Demon Slayers", "Hashira", "Tsuguko"]
+  },
+  {
+    "category": "Groups",
+    "subCategories": [
+      "Antagonist Groups",
+      "Kakushi",
+      "Kamado Family",
+      "Organizations",
+      "Rengoku Family",
+      "Swordsmith Village Residents"
+    ]
+  },
+  {
+    "category": "Antagonist Groups",
+    "subCategories": ["Spider Family", "Twelve Kizuki"]
+  },
+  { "category": "Organizations", "subCategories": ["Demon Slayers"] }
+]
