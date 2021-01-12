@@ -1,7 +1,17 @@
 import fs from 'fs';
 import path from 'path';
 
-import { fsConfig } from './config';
+export function getDumpDirectoryName(): string {
+  const today = new Date();
+
+  const getMonth = (date: Date) => {
+    const realMonth = date.getMonth() + 1;
+
+    return realMonth >= 10 ? realMonth : `0${realMonth}`;
+  };
+
+  return `${today.getFullYear()}-${getMonth(today)}-${today.getDate()}`;
+}
 
 function saveFile(filePath: string, content: string): Promise<void> {
   const directoryName = path.dirname(filePath);
@@ -22,7 +32,7 @@ export async function saveJSON(
   fileName: string,
   content: unknown,
 ): Promise<void> {
-  const filePath = `${fsConfig.directories.BASE}/${fileName}.json`;
+  const filePath = `${getDumpDirectoryName()}/${fileName}.json`;
 
   await saveFile(filePath, JSON.stringify(content));
 }

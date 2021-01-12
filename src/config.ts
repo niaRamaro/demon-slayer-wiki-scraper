@@ -22,6 +22,5 @@ export const fsConfig = {
   directories: {
     ARTICLES_CONTENT: 'articlesContent',
     ARTICLES_BY_CATEGORY: 'articlesByCategory',
-    BASE: 'dump',
   },
 };
