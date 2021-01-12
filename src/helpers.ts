@@ -22,9 +22,13 @@ export async function saveJSON(
   fileName: string,
   content: unknown,
 ): Promise<void> {
-  const filePath = `${fsConfig.BASE_DIRECTORY}/${fileName}.json`;
+  const filePath = `${fsConfig.directories.BASE}/${fileName}.json`;
 
   await saveFile(filePath, JSON.stringify(content));
+}
+
+export function readJSON<T>(filePath: string): T {
+  return JSON.parse(fs.readFileSync(filePath).toString());
 }
 
 export async function asyncBatch<T, R>(

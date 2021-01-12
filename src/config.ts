@@ -13,7 +13,13 @@ export const apiConfig = {
 };
 
 export const fsConfig = {
-  BASE_DIRECTORY: 'dump',
-  CATEGORIES_FILE_NAME: 'categories',
-  CATEGORIES_TREE_FILE_NAME: 'categoriesTree',
+  files: {
+    ARTICLES: 'articles',
+    CATEGORIES: 'categories',
+    CATEGORIES_TREE: 'categoriesTree',
+  },
+  directories: {
+    BASE: 'dump',
+    ARTICLES_BY_CATEGORY: 'articlesByCategory',
+  },
 };
