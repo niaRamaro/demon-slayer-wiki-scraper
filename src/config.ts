@@ -19,7 +19,8 @@ export const fsConfig = {
     CATEGORIES_TREE: 'categoriesTree',
   },
   directories: {
-    BASE: 'dump',
+    ARTICLES_CONTENT: 'articlesContent',
     ARTICLES_BY_CATEGORY: 'articlesByCategory',
+    BASE: 'dump',
   },
 };
