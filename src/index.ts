@@ -1,6 +1,7 @@
 import scrapArticlesByCategory from './scrapers/articlesByCategory';
 import scrapArticlesContent from './scrapers/articlesContent';
 import scrapCategories from './scrapers/categories';
+import scrapImagesUrlByArticle from './scrapers/imagesUrlByArticle';
 import { fsConfig } from './config';
 import { readJSON } from './helpers';
 
@@ -14,11 +15,16 @@ async function scrap() {
   );
   await scrapArticlesByCategory(categories);
 
-  console.log('=== GET ARTICLES CONTENT ===');
   const articles: { [key: string]: number }[] = readJSON(
     `${fsConfig.directories.BASE}/${fsConfig.files.ARTICLES}.json`,
   );
-  await scrapArticlesContent(Object.keys(articles));
+  const articleTitles = Object.keys(articles);
+
+  console.log('=== GET ARTICLES CONTENT ===');
+  await scrapArticlesContent(articleTitles);
+
+  console.log('=== GET IMAGES URL BY ARTICLE ===');
+  await scrapImagesUrlByArticle(articleTitles);
 }
 
 scrap();
