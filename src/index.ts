@@ -1,8 +1,10 @@
-import addCategoryArticlesThumbnail from './scrapers/categoryArticlesThumbnail';
-import generateArticlesHtml from './scrapers/articlesHtml';
-import scrapArticlesByCategory from './scrapers/articlesByCategory';
-import scrapArticlesContent from './scrapers/articlesContent';
-import scrapCategories from './scrapers/categories';
+import {
+  addCategoryArticlesThumbnail,
+  generateArticlesHtml,
+  scrapArticlesByCategory,
+  scrapArticlesContent,
+  scrapCategories,
+} from './scrapers';
 import { apiConfig, fsConfig } from './config';
 import { getDumpDirectoryName, readJSON, saveJSON } from './helpers';
 
