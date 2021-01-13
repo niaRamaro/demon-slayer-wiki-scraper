@@ -33,6 +33,7 @@ export default async function scrapArticlesByCategory(
   categories: string[],
 ): Promise<void> {
   const allArticles: { [key: string]: number } = {};
+  const filesToSave: Promise<void>[] = [];
 
   await asyncBatch(
     categories,
@@ -41,13 +42,16 @@ export default async function scrapArticlesByCategory(
       categoryArticles.forEach(({ pageid, title }) => {
         allArticles[title] = pageid;
       });
-      saveJSON(
-        fsConfig.directories.ARTICLES_BY_CATEGORY,
-        categories[index],
-        categoryArticles,
+      filesToSave.push(
+        saveJSON(
+          fsConfig.directories.ARTICLES_BY_CATEGORY,
+          categories[index],
+          categoryArticles,
+        ),
       );
     },
   );
 
+  await Promise.all(filesToSave);
   await saveJSON('', fsConfig.files.ARTICLES, allArticles);
 }

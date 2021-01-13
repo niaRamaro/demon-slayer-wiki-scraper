@@ -31,7 +31,7 @@ export default function generateArticlesHtml(articles: string[]): void {
   articles.forEach((title) => {
     const formatedTitle = formatFileName(title);
     const { html } = readJSON(
-      `${dumpDirectoryName}/${fsConfig.directories.ARTICLES_CONTENT}/${formatedTitle}.json`,
+      `${dumpDirectoryName}/${fsConfig.directories.ARTICLES_CONTENT}/${formatedTitle}`,
     );
     saveHtml(formatedTitle, html);
   });

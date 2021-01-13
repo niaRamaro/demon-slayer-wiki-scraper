@@ -64,6 +64,6 @@ export default async function scrapCategories(): Promise<void> {
   const allCategories = [...apiConfig.CATEGORIES, ...uniqueSubCategories];
   await Promise.all([
     saveJSON('', fsConfig.files.CATEGORIES_TREE, formatedCategories),
-    saveJSON('', fsConfig.files.CATEGORIES, allCategories),
+    saveJSON('', fsConfig.files.CATEGORIES, Array.from(new Set(allCategories))),
   ]);
 }

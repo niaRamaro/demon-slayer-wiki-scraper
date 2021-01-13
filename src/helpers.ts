@@ -54,7 +54,7 @@ export async function saveJSON(
 }
 
 export function readJSON<T>(filePath: string): T {
-  return JSON.parse(fs.readFileSync(filePath).toString());
+  return JSON.parse(fs.readFileSync(`${filePath}.json`).toString());
 }
 
 export async function asyncBatch<T, R>(

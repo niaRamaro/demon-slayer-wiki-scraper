@@ -7,6 +7,16 @@ const imgAttributesToRemove = [
   'data-caption',
 ];
 
+export function getFirstImage(html: string): string {
+  const $ = cheerio.load(html);
+
+  const firstImage = $('img').first();
+
+  return firstImage
+    ? firstImage.attr('data-src') || firstImage.attr('src') || ''
+    : '';
+}
+
 export function removeEditButtons(html: string): string {
   const $ = cheerio.load(html);
   $('span.mw-editsection').remove();
