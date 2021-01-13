@@ -1,6 +1,20 @@
 import fs from 'fs';
 import path from 'path';
 
+export function formatFileName(fileName: string): string {
+  const rules = [
+    ['/', '++'],
+    [':', '--'],
+  ];
+
+  return rules.reduce(
+    (formatedFileName, [searchFor, replaceWith]) =>
+      // eslint-disable-next-line implicit-arrow-linebreak
+      formatedFileName.split(searchFor).join(replaceWith),
+    fileName,
+  );
+}
+
 export function getDumpDirectoryName(): string {
   const today = new Date();
 
@@ -21,20 +35,22 @@ function saveFile(filePath: string, content: string): Promise<void> {
   }
 
   return new Promise((resolve) => {
-    fs.writeFile(filePath.split(':').join('--'), content, {}, () => {
-      console.log('Saved at : ', filePath);
+    fs.writeFile(filePath, content, {}, () => {
+      console.log('Saved at :', filePath);
       resolve();
     });
   });
 }
 
 export async function saveJSON(
+  parentDirectory: string,
   fileName: string,
   content: unknown,
 ): Promise<void> {
-  const filePath = `${getDumpDirectoryName()}/${fileName}.json`;
+  const formatedFileName = formatFileName(fileName);
+  const jsonPath = `${getDumpDirectoryName()}/${parentDirectory}/${formatedFileName}.json`;
 
-  await saveFile(filePath, JSON.stringify(content));
+  await saveFile(jsonPath, JSON.stringify(content));
 }
 
 export function readJSON<T>(filePath: string): T {

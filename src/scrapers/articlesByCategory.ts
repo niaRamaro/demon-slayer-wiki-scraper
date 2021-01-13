@@ -42,11 +42,12 @@ export default async function scrapArticlesByCategory(
         allArticles[title] = pageid;
       });
       saveJSON(
-        `${fsConfig.directories.ARTICLES_BY_CATEGORY}/${categories[index]}`,
+        fsConfig.directories.ARTICLES_BY_CATEGORY,
+        categories[index],
         categoryArticles,
       );
     },
   );
 
-  await saveJSON(fsConfig.files.ARTICLES, allArticles);
+  await saveJSON('', fsConfig.files.ARTICLES, allArticles);
 }

@@ -37,6 +37,8 @@ function formatArticleContent(html: string) {
 export default async function scrapArticlesContent(
   articles: string[],
 ): Promise<void> {
+  const filesToSave: Promise<void>[] = [];
+
   await asyncBatch<string, ArticleContent>(
     articles,
     (title) => getArticle(title),
@@ -46,12 +48,15 @@ export default async function scrapArticlesContent(
         ...rest,
         html: formatArticleContent(text['*']),
       };
-      saveJSON(
-        `${fsConfig.directories.ARTICLES_CONTENT}/${articles[index]
-          .split('/')
-          .join('++')}`,
-        article,
+      filesToSave.push(
+        saveJSON(
+          fsConfig.directories.ARTICLES_CONTENT,
+          articles[index],
+          article,
+        ),
       );
     },
   );
+
+  await Promise.all(filesToSave);
 }
