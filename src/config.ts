@@ -17,6 +17,7 @@ export const fsConfig = {
     ARTICLES: 'articles',
     CATEGORIES: 'categories',
     CATEGORIES_TREE: 'categoriesTree',
+    ROOT_CATEGORIES: 'rootCategories',
   },
   directories: {
     ARTICLES_BY_CATEGORY: 'articlesByCategory',

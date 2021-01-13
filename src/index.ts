@@ -3,11 +3,14 @@ import generateArticlesHtml from './scrapers/articlesHtml';
 import scrapArticlesByCategory from './scrapers/articlesByCategory';
 import scrapArticlesContent from './scrapers/articlesContent';
 import scrapCategories from './scrapers/categories';
-import { fsConfig } from './config';
-import { getDumpDirectoryName, readJSON } from './helpers';
+import { apiConfig, fsConfig } from './config';
+import { getDumpDirectoryName, readJSON, saveJSON } from './helpers';
 
 async function scrap() {
   const dumpDirectoryName = getDumpDirectoryName();
+
+  console.log('=== SAVING ROOT CATEGORIES ===');
+  saveJSON('', fsConfig.files.ROOT_CATEGORIES, apiConfig.CATEGORIES);
 
   console.log('=== FORMAT CATEGORIES ===');
   await scrapCategories();
