@@ -8,7 +8,7 @@ The saved files are located in a directory named after the current date.
 
 The json files can then be used to populate a database or whatever.
 
-An example of the generated files can be found in the [examples directory](https://github.com/niaRamaro/demon-slayer-wiki-scraper/tree/main/examples)
+An example of some of the generated files can be found in the [examples directory](https://github.com/niaRamaro/demon-slayer-wiki-scraper/tree/main/examples)
 
 ## Usage
 
