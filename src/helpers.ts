@@ -27,7 +27,7 @@ export function getDumpDirectoryName(): string {
   return `${today.getFullYear()}-${getMonth(today)}-${today.getDate()}`;
 }
 
-function saveFile(filePath: string, content: string): Promise<void> {
+export function saveFile(filePath: string, content: string): Promise<void> {
   const directoryName = path.dirname(filePath);
 
   if (!fs.existsSync(directoryName)) {

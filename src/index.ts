@@ -3,6 +3,7 @@ import scrapArticlesContent from './scrapers/articlesContent';
 import scrapCategories from './scrapers/categories';
 import { fsConfig } from './config';
 import { getDumpDirectoryName, readJSON } from './helpers';
+import generateArticlesHtml from './scrapers/articlesHtml';
 
 async function scrap() {
   const dumpDirectoryName = getDumpDirectoryName();
@@ -23,6 +24,9 @@ async function scrap() {
 
   console.log('=== GET ARTICLES CONTENT ===');
   await scrapArticlesContent(articleTitles);
+
+  console.log('=== GENERATE ARTICLES HTML');
+  generateArticlesHtml(articleTitles);
 }
 
 scrap();
