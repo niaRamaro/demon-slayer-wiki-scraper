@@ -1,11 +1,38 @@
 [
-  { "pageid": 1180, "title": "Chapter 128" },
-  { "pageid": 1185, "title": "Chapter 129" },
-  { "pageid": 1191, "title": "Chapter 130" },
-  { "pageid": 1199, "title": "Chapter 131" },
-  { "pageid": 1202, "title": "Chapter 132" },
-  { "pageid": 1213, "title": "Chapter 133" },
-  { "pageid": 1216, "title": "Chapter 134" },
-  { "pageid": 1239, "title": "Chapter 135" },
-  { "pageid": 1241, "title": "Chapter 136" }
+  {
+    "title": "Chapter 128",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/a/a5/Kimetsu_no_Yaiba_CH128.png/revision/latest/scale-to-width-down/342?cb=20190428133438"
+  },
+  {
+    "title": "Chapter 129",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/21/Kimetsu_no_Yaiba_CH129.png/revision/latest/scale-to-width-down/343?cb=20190428133855"
+  },
+  {
+    "title": "Chapter 130",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/1/18/Kimetsu_no_Yaiba_CH130.png/revision/latest/scale-to-width-down/342?cb=20200320183128"
+  },
+  {
+    "title": "Chapter 131",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/a/a4/Kimetsu_no_Yaiba_CH131.png/revision/latest/scale-to-width-down/342?cb=20190428133935"
+  },
+  {
+    "title": "Chapter 132",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/7/7a/Kimetsu_no_Yaiba_CH132.png/revision/latest/scale-to-width-down/342?cb=20190428133944"
+  },
+  {
+    "title": "Chapter 133",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/db/Kimetsu_no_Yaiba_CH133.png/revision/latest/scale-to-width-down/342?cb=20190428133952"
+  },
+  {
+    "title": "Chapter 134",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/7/7e/Kimetsu_no_Yaiba_CH134.png/revision/latest/scale-to-width-down/342?cb=20190428134000"
+  },
+  {
+    "title": "Chapter 135",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/05/Kimetsu_no_Yaiba_CH135.png/revision/latest/scale-to-width-down/342?cb=20190428134009"
+  },
+  {
+    "title": "Chapter 136",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/2f/Kimetsu_no_Yaiba_CH136.png/revision/latest/scale-to-width-down/342?cb=20190428134124"
+  }
 ]

@@ -1,60 +1,126 @@
 [
-  { "pageid": 11767, "title": "Demon Slayers vs Enmu" },
-  { "pageid": 11715, "title": "Demon Slayers vs Muzan Kibutsuji: Part 1" },
-  { "pageid": 15376, "title": "Demon Slayers vs Muzan Kibutsuji: Part 2" },
-  { "pageid": 14322, "title": "Inosuke Hashibira vs Horned Demon" },
-  { "pageid": 4005, "title": "Kanao Tsuyuri and Inosuke Hashibira vs Doma" },
-  { "pageid": 11769, "title": "Kyojuro Rengoku vs Akaza" },
-  { "pageid": 24298, "title": "Mitsuri Kanroji and Obanai Iguro vs Nakime" },
-  { "pageid": 12198, "title": "Muichiro Tokito vs Gyokko" },
   {
-    "pageid": 7167,
-    "title": "Muichiro Tokito, Genya Shinazugawa, Sanemi Shinazugawa and Gyomei Himejima vs Kokushibo"
-  },
-  { "pageid": 10464, "title": "Shinobu Kocho vs Doma" },
-  { "pageid": 11149, "title": "Shinobu Kocho vs Spider Demon (Daughter)" },
-  { "pageid": 4003, "title": "Tanjiro Kamado and Giyu Tomioka vs Akaza" },
-  {
-    "pageid": 11128,
-    "title": "Tanjiro Kamado and Inosuke Hashibira vs Spider Demon (Father)"
+    "title": "Demon Slayers vs Enmu",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/20/Mugen_Train_Poster_2.png/revision/latest/scale-to-width-down/350?cb=20200802133213"
   },
   {
-    "pageid": 11077,
-    "title": "Tanjiro Kamado and Inosuke Hashibira vs Spider Demon (Mother)"
-  },
-  { "pageid": 14293, "title": "Tanjiro Kamado and Nezuko Kamado vs Daki" },
-  {
-    "pageid": 11434,
-    "title": "Tanjiro Kamado and Nezuko Kamado vs Giyu Tomioka"
+    "title": "Demon Slayers vs Muzan Kibutsuji: Part 1",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/6/66/Kimetsu_no_Yaiba_CH140.png/revision/latest/scale-to-width-down/350?cb=20181221213635"
   },
   {
-    "pageid": 10911,
-    "title": "Tanjiro Kamado and Nezuko Kamado vs Swamp Demon"
+    "title": "Demon Slayers vs Muzan Kibutsuji: Part 2",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c1/Kimetsu_no_Yaiba_CH193.png/revision/latest/scale-to-width-down/350?cb=20200210233818"
   },
   {
-    "pageid": 11436,
-    "title": "Tanjiro Kamado and Nezuko Kamado vs Temple Demon"
-  },
-  { "pageid": 14234, "title": "Tanjiro Kamado and Tengen Uzui vs Gyutaro" },
-  { "pageid": 10917, "title": "Tanjiro Kamado vs Hand Demon" },
-  { "pageid": 13879, "title": "Tanjiro Kamado vs Inosuke Hashibira" },
-  { "pageid": 11017, "title": "Tanjiro Kamado vs Kyogai" },
-  { "pageid": 11147, "title": "Tanjiro Kamado vs Rui" },
-  { "pageid": 11438, "title": "Tanjiro Kamado vs Sabito" },
-  { "pageid": 14323, "title": "Tanjiro Kamado vs Sanemi Shinazugawa" },
-  {
-    "pageid": 12706,
-    "title": "Tanjiro Kamado, Nezuko Kamado, Genya Shinazugawa, and Mitsuri Kanroji vs Hantengu"
+    "title": "Inosuke Hashibira vs Horned Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/1/16/Inosuke_using_Fang_Three_Devour_on_Horned_Demon.gif/revision/latest/scale-to-width-down/320?cb=20190715163006"
   },
   {
-    "pageid": 10500,
-    "title": "Tanjiro Kamado, Nezuko Kamado, Tamayo, and Yushiro vs Susamaru and Yahaba"
+    "title": "Kanao Tsuyuri and Inosuke Hashibira vs Doma",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/f8/Kimetsu_no_Yaiba_CH162.png/revision/latest/scale-to-width-down/350?cb=20190617151409"
   },
   {
-    "pageid": 13342,
-    "title": "Zenitsu Agatsuma and Inosuke Hashibira vs Daki"
+    "title": "Kyojuro Rengoku vs Akaza",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/1/13/Mugen_Train_Poster_3.png/revision/latest/scale-to-width-down/350?cb=20201027083821"
   },
-  { "pageid": 10465, "title": "Zenitsu Agatsuma vs Kaigaku" },
-  { "pageid": 11092, "title": "Zenitsu Agatsuma vs Spider Demon (Son)" },
-  { "pageid": 14320, "title": "Zenitsu Agatsuma vs Tongue Demon" }
+  {
+    "title": "Mitsuri Kanroji and Obanai Iguro vs Nakime",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/3b/Nakime_blocks_Mitsuri%27s_attack_with_her_Blood_Demon_Art.png/revision/latest/scale-to-width-down/323?cb=20201112061407"
+  },
+  {
+    "title": "Muichiro Tokito vs Gyokko",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/40/Kimetsu_no_Yaiba_CH111.png/revision/latest/scale-to-width-down/342?cb=20190428132734"
+  },
+  {
+    "title": "Muichiro Tokito, Genya Shinazugawa, Sanemi Shinazugawa and Gyomei Himejima vs Kokushibo",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/b8/Demon_Slayers_vs_Kokushibo.png/revision/latest/scale-to-width-down/322?cb=20200315182057"
+  },
+  {
+    "title": "Shinobu Kocho vs Doma",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/02/Shinobu_vs_Doma.png/revision/latest/scale-to-width-down/319?cb=20200308174029"
+  },
+  {
+    "title": "Shinobu Kocho vs Spider Demon (Daughter)",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/98/The_Daughter_Spider_Demon_fighting_Shinobu.gif/revision/latest/scale-to-width-down/320?cb=20190817181223"
+  },
+  {
+    "title": "Tanjiro Kamado and Giyu Tomioka vs Akaza",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/38/Kimetsu_no_Yaiba_CH147.png/revision/latest/scale-to-width-down/342?cb=20190225210040"
+  },
+  {
+    "title": "Tanjiro Kamado and Inosuke Hashibira vs Spider Demon (Father)",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/32/Tanjiro_%26_Inosuke_fighting_Father_Spider_Demon.png/revision/latest/scale-to-width-down/350?cb=20191124162623"
+  },
+  {
+    "title": "Tanjiro Kamado and Inosuke Hashibira vs Spider Demon (Mother)",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/6/6c/Mother_Spider_Demon_killed_by_Tanjiro%27s_Fifth_Form.png/revision/latest/scale-to-width-down/350?cb=20190720165656"
+  },
+  {
+    "title": "Tanjiro Kamado and Nezuko Kamado vs Daki",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/4c/Tanjiro_and_Nezuko_vs_Daki.png/revision/latest/scale-to-width-down/323?cb=20201012173708"
+  },
+  {
+    "title": "Tanjiro Kamado and Nezuko Kamado vs Giyu Tomioka",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/1/16/Nezuko_fighting_Giyu.gif/revision/latest/scale-to-width-down/320?cb=20200120080046"
+  },
+  {
+    "title": "Tanjiro Kamado and Nezuko Kamado vs Swamp Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/fa/Tanjiro_and_Nezuko_vs_Swamp_Demon.gif/revision/latest/scale-to-width-down/320?cb=20191127213709"
+  },
+  {
+    "title": "Tanjiro Kamado and Nezuko Kamado vs Temple Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/42/Tanjiro_slashes_the_Temple_Demon.png/revision/latest/scale-to-width-down/350?cb=20191127181525"
+  },
+  {
+    "title": "Tanjiro Kamado and Tengen Uzui vs Gyutaro",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/a/ad/Tanjiro_and_Tengen_vs_Gyutaro_CH93.png/revision/latest/scale-to-width-down/324?cb=20200227232415"
+  },
+  {
+    "title": "Tanjiro Kamado vs Hand Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/40/Tanjiro_vs_Hand_Demon.gif/revision/latest/scale-to-width-down/320?cb=20191123171228"
+  },
+  {
+    "title": "Tanjiro Kamado vs Inosuke Hashibira",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/45/Tanjiro_vs_Inosuke.gif/revision/latest/scale-to-width-down/320?cb=20200131085529"
+  },
+  {
+    "title": "Tanjiro Kamado vs Kyogai",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/3d/Kyogai_uses_Rapid_Drumming.gif/revision/latest/scale-to-width-down/320?cb=20190629172141"
+  },
+  {
+    "title": "Tanjiro Kamado vs Rui",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/44/Tanjiro_fighting_Rui.gif/revision/latest/scale-to-width-down/320?cb=20190810183257"
+  },
+  {
+    "title": "Tanjiro Kamado vs Sabito",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e9/Sabito_fighting_Tanjiro.gif/revision/latest/scale-to-width-down/350?cb=20191007195722"
+  },
+  {
+    "title": "Tanjiro Kamado vs Sanemi Shinazugawa",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/81/Sanemi_attacking_Genya.png/revision/latest/scale-to-width-down/350?cb=20200308170635"
+  },
+  {
+    "title": "Tanjiro Kamado, Nezuko Kamado, Genya Shinazugawa, and Mitsuri Kanroji vs Hantengu",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/05/Kimetsu_no_Yaiba_CH125.png/revision/latest/scale-to-width-down/342?cb=20190428133431"
+  },
+  {
+    "title": "Tanjiro Kamado, Nezuko Kamado, Tamayo, and Yushiro vs Susamaru and Yahaba",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/dc/Tanjiro_and_Nezuko_vs_Susamaru_and_Yahaba.png/revision/latest/scale-to-width-down/350?cb=20191130200302"
+  },
+  {
+    "title": "Zenitsu Agatsuma and Inosuke Hashibira vs Daki",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/6/63/Inosuke_and_Zenitsu_face_Daki.png/revision/latest/scale-to-width-down/330?cb=20200201215453"
+  },
+  {
+    "title": "Zenitsu Agatsuma vs Kaigaku",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/27/Zenitsu_vs_Kaigaku.png/revision/latest/scale-to-width-down/322?cb=20200308173846"
+  },
+  {
+    "title": "Zenitsu Agatsuma vs Spider Demon (Son)",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/a/a6/Zenitsu_vs_Son_Spider_Demon.gif/revision/latest/scale-to-width-down/320?cb=20200120085338"
+  },
+  {
+    "title": "Zenitsu Agatsuma vs Tongue Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/9b/Zenitsu_using_Thunderclap_and_Flash_on_Tongue_Demon.gif/revision/latest/scale-to-width-down/320?cb=20190622172836"
+  }
 ]

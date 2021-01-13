@@ -1,17 +1,62 @@
 [
-  { "pageid": 2320, "title": "Breathing Styles" },
-  { "pageid": 3029, "title": "Beast Breathing" },
-  { "pageid": 3545, "title": "Flame Breathing" },
-  { "pageid": 3570, "title": "Flower Breathing" },
-  { "pageid": 2361, "title": "Hinokami Kagura" },
-  { "pageid": 4333, "title": "Insect Breathing" },
-  { "pageid": 3551, "title": "Love Breathing" },
-  { "pageid": 3641, "title": "Mist Breathing" },
-  { "pageid": 3989, "title": "Moon Breathing" },
-  { "pageid": 4465, "title": "Serpent Breathing" },
-  { "pageid": 3638, "title": "Sound Breathing" },
-  { "pageid": 4340, "title": "Stone Breathing" },
-  { "pageid": 2136, "title": "Thunder Breathing" },
-  { "pageid": 2124, "title": "Water Breathing" },
-  { "pageid": 3571, "title": "Wind Breathing" }
+  {
+    "title": "Breathing Styles",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/46/Kyojuro_explaining_Breath_Styles_to_Tanjiro.png/revision/latest/scale-to-width-down/200?cb=20200315211543"
+  },
+  {
+    "title": "Beast Breathing",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/48/Beast_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/200?cb=20200524144724"
+  },
+  {
+    "title": "Flame Breathing",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/b0/Shinjuro_profile.png/revision/latest/scale-to-width-down/130?cb=20181211180928"
+  },
+  {
+    "title": "Flower Breathing",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/31/Kanae_Anime_Profile.png/revision/latest/scale-to-width-down/130?cb=20191125194657"
+  },
+  {
+    "title": "Hinokami Kagura",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/92/Hinokami_Kagura_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/200?cb=20200524144723"
+  },
+  {
+    "title": "Insect Breathing",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/b8/Insect_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/200?cb=20200524144722"
+  },
+  {
+    "title": "Love Breathing",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/f8/Mitsuri_Anime_Profile.png/revision/latest/scale-to-width-down/130?cb=20191125192139"
+  },
+  {
+    "title": "Mist Breathing",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/9e/Muichiro_Anime_Profile.png/revision/latest/scale-to-width-down/130?cb=20191125200456"
+  },
+  {
+    "title": "Moon Breathing",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/a/a1/Kokushibo_colored_profile.png/revision/latest/scale-to-width-down/130?cb=20191023130927"
+  },
+  {
+    "title": "Serpent Breathing",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/b7/Obanai_Anime_Profile.png/revision/latest/scale-to-width-down/130?cb=20191125192207"
+  },
+  {
+    "title": "Sound Breathing",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/d8/Tengen_Anime_Profile.png/revision/latest/scale-to-width-down/130?cb=20191125192102"
+  },
+  {
+    "title": "Stone Breathing",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/7/79/Gyomei_Anime_Profile.png/revision/latest/scale-to-width-down/130?cb=20191125194600"
+  },
+  {
+    "title": "Thunder Breathing",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/00/Thunder_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/200?cb=20200524144723"
+  },
+  {
+    "title": "Water Breathing",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/32/Water_Breathing_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/200?cb=20200524143708"
+  },
+  {
+    "title": "Wind Breathing",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/36/Sanemi_Anime_Profile.png/revision/latest/scale-to-width-down/130?cb=20191125200428"
+  }
 ]

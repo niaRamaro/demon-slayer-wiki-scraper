@@ -1,6 +1,18 @@
 [
-  { "pageid": 2337, "title": "Blood Demon Art" },
-  { "pageid": 17474, "title": "Blood Demon Art/Demonstrations" },
-  { "pageid": 2320, "title": "Breathing Styles" },
-  { "pageid": 24332, "title": "Repetitive Action" }
+  {
+    "title": "Blood Demon Art",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/98/Exploding_Blood_%28Zenshuchuten%29.png/revision/latest/scale-to-width-down/200?cb=20200807170751"
+  },
+  {
+    "title": "Blood Demon Art/Demonstrations",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/7/7c/Compass_Needle.png/revision/latest/scale-to-width-down/193?cb=20200411065609"
+  },
+  {
+    "title": "Breathing Styles",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/46/Kyojuro_explaining_Breath_Styles_to_Tanjiro.png/revision/latest/scale-to-width-down/200?cb=20200315211543"
+  },
+  {
+    "title": "Repetitive Action",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/37/Repetitive_Action.png/revision/latest/scale-to-width-down/180?cb=20201109214138"
+  }
 ]

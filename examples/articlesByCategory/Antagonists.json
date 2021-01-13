@@ -1,35 +1,134 @@
 [
-  { "pageid": 571, "title": "Akaza" },
-  { "pageid": 670, "title": "Daki" },
-  { "pageid": 160, "title": "Demon" },
-  { "pageid": 800, "title": "Doma" },
-  { "pageid": 542, "title": "Enmu" },
-  { "pageid": 23730, "title": "Flute Demon" },
-  { "pageid": 804, "title": "Gyokko" },
-  { "pageid": 725, "title": "Gyutaro" },
-  { "pageid": 24260, "title": "Hairo" },
-  { "pageid": 268, "title": "Hand Demon" },
-  { "pageid": 802, "title": "Hantengu" },
-  { "pageid": 2929, "title": "Horned Demon" },
-  { "pageid": 1465, "title": "Kaigaku" },
-  { "pageid": 3576, "title": "Kamanue" },
-  { "pageid": 798, "title": "Kokushibo" },
-  { "pageid": 545, "title": "Kyogai" },
-  { "pageid": 4971, "title": "Matazo" },
-  { "pageid": 3574, "title": "Mukago" },
-  { "pageid": 138, "title": "Muzan Kibutsuji" },
-  { "pageid": 1056, "title": "Nakime" },
-  { "pageid": 3572, "title": "Rokuro" },
-  { "pageid": 538, "title": "Rui" },
-  { "pageid": 695, "title": "Spider Demon (Daughter)" },
-  { "pageid": 689, "title": "Spider Demon (Father)" },
-  { "pageid": 683, "title": "Spider Demon (Mother)" },
-  { "pageid": 692, "title": "Spider Demon (Son)" },
-  { "pageid": 4254, "title": "Spider Family" },
-  { "pageid": 275, "title": "Susamaru" },
-  { "pageid": 271, "title": "Swamp Demon" },
-  { "pageid": 458, "title": "Temple Demon" },
-  { "pageid": 540, "title": "Twelve Kizuki" },
-  { "pageid": 3573, "title": "Wakuraba" },
-  { "pageid": 273, "title": "Yahaba" }
+  {
+    "title": "Akaza",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/bf/Akaza_anime.png/revision/latest/scale-to-width-down/350?cb=20201027070546"
+  },
+  {
+    "title": "Daki",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/a/af/Daki_colored_profile_2.png/revision/latest/scale-to-width-down/350?cb=20191026164650"
+  },
+  {
+    "title": "Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/31/Muzan_and_the_Upper_Moons.png/revision/latest/scale-to-width-down/200?cb=20191031013340"
+  },
+  {
+    "title": "Doma",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/5/58/Doma_colored_body_3.png/revision/latest/scale-to-width-down/350?cb=20200526231706"
+  },
+  {
+    "title": "Enmu",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/5/56/Enmu_profile_anime.png/revision/latest/scale-to-width-down/350?cb=20191222072849"
+  },
+  {
+    "title": "Flute Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/82/Flute_Demon_Manga.png/revision/latest/scale-to-width-down/350?cb=20201018101922"
+  },
+  {
+    "title": "Gyokko",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/05/Gyokko.png/revision/latest/scale-to-width-down/350?cb=20190731214018"
+  },
+  {
+    "title": "Gyutaro",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/fb/Gyutaro_colored_profile_3.png/revision/latest/scale-to-width-down/350?cb=20191023131717"
+  },
+  {
+    "title": "Hairo",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/08/Hairo_body.png/revision/latest/scale-to-width-down/350?cb=20201217025903"
+  },
+  {
+    "title": "Hand Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/3e/Hand_Demon_about_to_kill_Sabito.png/revision/latest/scale-to-width-down/350?cb=20190427171611"
+  },
+  {
+    "title": "Hantengu",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/fd/Hantengu_body.png/revision/latest/scale-to-width-down/350?cb=20180707155617"
+  },
+  {
+    "title": "Horned Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/6/64/Horned_Demon.png/revision/latest/scale-to-width-down/350?cb=20190622174617"
+  },
+  {
+    "title": "Kaigaku",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/1/10/Kaigaku_colored_body.png/revision/latest/scale-to-width-down/350?cb=20190128205949"
+  },
+  {
+    "title": "Kamanue",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/de/Kamanue_called_in_the_Dimentional_Infinity_Fortress.png/revision/latest/scale-to-width-down/350?cb=20190928170257"
+  },
+  {
+    "title": "Kokushibo",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/f3/Kokushibo_colored_body.png/revision/latest/scale-to-width-down/336?cb=20200413041714"
+  },
+  {
+    "title": "Kyogai",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/db/Kyogai.png/revision/latest/scale-to-width-down/350?cb=20191023121412"
+  },
+  {
+    "title": "Matazo",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/a/a8/Matazo.png/revision/latest/scale-to-width-down/326?cb=20190822193332"
+  },
+  {
+    "title": "Mukago",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/7/7c/Mukago_bowing_to_Muzan.png/revision/latest/scale-to-width-down/350?cb=20190928170133"
+  },
+  {
+    "title": "Muzan Kibutsuji",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/43/Muzan_encountering_Tanjiro.png/revision/latest/scale-to-width-down/350?cb=20190518181646"
+  },
+  {
+    "title": "Nakime",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/7/7f/Nakime_anime.png/revision/latest/scale-to-width-down/350?cb=20190928171630"
+  },
+  {
+    "title": "Rokuro",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/5/5a/Rokuro_called_in_the_Dimentional_Infinity_Fortress.png/revision/latest/scale-to-width-down/281?cb=20200303201145"
+  },
+  {
+    "title": "Rui",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/01/Rui_full_view.png/revision/latest/scale-to-width-down/350?cb=20190713170621"
+  },
+  {
+    "title": "Spider Demon (Daughter)",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/b7/Daughter_Spider_Demon_Anime.png/revision/latest/scale-to-width-down/350?cb=20190720170003"
+  },
+  {
+    "title": "Spider Demon (Father)",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/d0/Father_Spider_Demon_looking_for_Inosuke.png/revision/latest/scale-to-width-down/350?cb=20190803164915"
+  },
+  {
+    "title": "Spider Demon (Mother)",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/1/1b/Mother_Demon_Spider_Anime.png/revision/latest/scale-to-width-down/350?cb=20190720170548"
+  },
+  {
+    "title": "Spider Demon (Son)",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/1/14/Son_Spider_Demon_anime.png/revision/latest/scale-to-width-down/350?cb=20190727171155"
+  },
+  {
+    "title": "Spider Family",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/87/The_Daughter_Spider_Demon_welcomed_to_the_family.png/revision/latest/scale-to-width-down/280?cb=20190817173804"
+  },
+  {
+    "title": "Susamaru",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/de/Susamaru_anime.png/revision/latest/scale-to-width-down/350?cb=20190525170709"
+  },
+  {
+    "title": "Swamp Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/8b/Swamp_Demon.png/revision/latest/scale-to-width-down/350?cb=20190511165001"
+  },
+  {
+    "title": "Temple Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/38/Temple_Demon_anime.png/revision/latest/scale-to-width-down/350?cb=20190413173517"
+  },
+  {
+    "title": "Twelve Kizuki",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/3c/Twelve_Demon_Moons.png/revision/latest/scale-to-width-down/350?cb=20190619043816"
+  },
+  {
+    "title": "Wakuraba",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/98/Wakuraba_called_in_the_Dimentional_Infinity_Fortress.png/revision/latest/scale-to-width-down/350?cb=20190928170048"
+  },
+  {
+    "title": "Yahaba",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/37/Yahaba_Profile.png/revision/latest/scale-to-width-down/350?cb=20190525170733"
+  }
 ]

@@ -1,16 +1,58 @@
 [
-  { "pageid": 524, "title": "Asakusa Arc" },
-  { "pageid": 626, "title": "Entertainment District Arc" },
-  { "pageid": 15370, "title": "Final Battle Arc" },
-  { "pageid": 521, "title": "Final Selection Arc" },
-  { "pageid": 523, "title": "First Mission Arc" },
-  { "pageid": 1207, "title": "Hashira Training Arc" },
-  { "pageid": 1470, "title": "Infinity Castle Arc" },
-  { "pageid": 528, "title": "Mugen Train Arc" },
-  { "pageid": 526, "title": "Natagumo Mountain Arc" },
-  { "pageid": 527, "title": "Rehabilitation Training Arc" },
-  { "pageid": 1067, "title": "Story Arcs" },
-  { "pageid": 15371, "title": "Sunrise Countdown Arc" },
-  { "pageid": 1012, "title": "Swordsmith Village Arc" },
-  { "pageid": 525, "title": "Tsuzumi Mansion Arc" }
+  {
+    "title": "Asakusa Arc",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/ec/Asakusa_Arc_%28anime%29.png/revision/latest/scale-to-width-down/350?cb=20190614031905"
+  },
+  {
+    "title": "Entertainment District Arc",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/f7/Entertainment_District_Arc.png/revision/latest/scale-to-width-down/350?cb=20190508202452"
+  },
+  {
+    "title": "Final Battle Arc",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c1/Kimetsu_no_Yaiba_CH193.png/revision/latest/scale-to-width-down/350?cb=20200210233818"
+  },
+  {
+    "title": "Final Selection Arc",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/5/5f/Final_Selection_Arc_%28anime%29.png/revision/latest/scale-to-width-down/350?cb=20201114182651"
+  },
+  {
+    "title": "First Mission Arc",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/36/First_Mission_Arc_%28anime%29.png/revision/latest/scale-to-width-down/350?cb=20201114182831"
+  },
+  {
+    "title": "Hashira Training Arc",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/27/Hashira_Training_Arc.png/revision/latest/scale-to-width-down/350?cb=20200808134954"
+  },
+  {
+    "title": "Infinity Castle Arc",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/4c/Infinity_Castle_Arc.png/revision/latest/scale-to-width-down/350?cb=20190508203109"
+  },
+  {
+    "title": "Mugen Train Arc",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/d4/Mugen_Train_Arc.png/revision/latest/scale-to-width-down/350?cb=20190704023206"
+  },
+  {
+    "title": "Natagumo Mountain Arc",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c3/Natagumo_Mountain_Arc_%28anime%29.png/revision/latest/scale-to-width-down/350?cb=20201114184408"
+  },
+  {
+    "title": "Rehabilitation Training Arc",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/f8/Rehabilitation_Training_Arc_%28anime%29.png/revision/latest/scale-to-width-down/350?cb=20201121114057"
+  },
+  {
+    "title": "Story Arcs",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/05/Kimetsu_no_Yaiba_Key_Visual_2.png/revision/latest/scale-to-width-down/200?cb=20181222090143"
+  },
+  {
+    "title": "Sunrise Countdown Arc",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/8c/Kimetsu_no_Yaiba_CH182.png/revision/latest/scale-to-width-down/350?cb=20191117172533"
+  },
+  {
+    "title": "Swordsmith Village Arc",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/8f/Swordsmith_Village_Arc.png/revision/latest/scale-to-width-down/350?cb=20190430143403"
+  },
+  {
+    "title": "Tsuzumi Mansion Arc",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/b2/Tsuzumi_Mansion_Arc_%28anime%29.png/revision/latest/scale-to-width-down/350?cb=20201114183703"
+  }
 ]

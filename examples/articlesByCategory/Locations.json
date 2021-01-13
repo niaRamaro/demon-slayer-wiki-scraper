@@ -1,6 +1,18 @@
 [
-  { "pageid": 4292, "title": "Butterfly Mansion" },
-  { "pageid": 4973, "title": "Infinity Castle" },
-  { "pageid": 11148, "title": "Swordsmith Village" },
-  { "pageid": 24345, "title": "Tsuzumi Mansion" }
+  {
+    "title": "Butterfly Mansion",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/1/1c/The_Butterfly_Mansion.png/revision/latest/scale-to-width-down/350?cb=20191215161736"
+  },
+  {
+    "title": "Infinity Castle",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/33/Infinity_Castle.gif/revision/latest/scale-to-width-down/300?cb=20200209165113"
+  },
+  {
+    "title": "Swordsmith Village",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/8f/Swordsmith_Village_Arc.png/revision/latest/scale-to-width-down/350?cb=20190430143403"
+  },
+  {
+    "title": "Tsuzumi Mansion",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/32/Tsuzumi_Mansion.png/revision/latest/scale-to-width-down/350?cb=20201113110419"
+  }
 ]

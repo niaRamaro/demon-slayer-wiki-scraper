@@ -1,22 +1,82 @@
 [
-  { "pageid": 471, "title": "Chapter 52" },
-  { "pageid": 474, "title": "Chapter 53" },
-  { "pageid": 477, "title": "Chapter 54" },
-  { "pageid": 480, "title": "Chapter 55" },
-  { "pageid": 483, "title": "Chapter 56" },
-  { "pageid": 486, "title": "Chapter 57" },
-  { "pageid": 489, "title": "Chapter 58" },
-  { "pageid": 493, "title": "Chapter 59" },
-  { "pageid": 497, "title": "Chapter 60" },
-  { "pageid": 549, "title": "Chapter 61" },
-  { "pageid": 565, "title": "Chapter 62" },
-  { "pageid": 569, "title": "Chapter 63" },
-  { "pageid": 574, "title": "Chapter 64" },
-  { "pageid": 577, "title": "Chapter 65" },
-  { "pageid": 591, "title": "Chapter 66" },
-  { "pageid": 597, "title": "Chapter 67" },
-  { "pageid": 601, "title": "Chapter 68" },
-  { "pageid": 614, "title": "Chapter 69" },
-  { "pageid": 7338, "title": "Episode 26" },
-  { "pageid": 7333, "title": "Kimetsu no Yaiba: The Movie - Mugen Train" }
+  {
+    "title": "Chapter 52",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/a/ad/Kimetsu_no_Yaiba_CH52.png/revision/latest/scale-to-width-down/342?cb=20190428131419"
+  },
+  {
+    "title": "Chapter 53",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c5/Kimetsu_no_Yaiba_CH53.png/revision/latest/scale-to-width-down/342?cb=20190428131427"
+  },
+  {
+    "title": "Chapter 54",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/98/Kimetsu_no_Yaiba_CH54.png/revision/latest/scale-to-width-down/342?cb=20190428131436"
+  },
+  {
+    "title": "Chapter 55",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/f4/Kimetsu_no_Yaiba_CH55.png/revision/latest/scale-to-width-down/342?cb=20190428131444"
+  },
+  {
+    "title": "Chapter 56",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c6/Kimetsu_no_Yaiba_CH56.png/revision/latest/scale-to-width-down/342?cb=20190428131500"
+  },
+  {
+    "title": "Chapter 57",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/7/75/Kimetsu_no_Yaiba_CH57.png/revision/latest/scale-to-width-down/342?cb=20190428131452"
+  },
+  {
+    "title": "Chapter 58",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e0/Kimetsu_no_Yaiba_CH58.png/revision/latest/scale-to-width-down/342?cb=20190428131529"
+  },
+  {
+    "title": "Chapter 59",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/9f/Kimetsu_no_Yaiba_CH59.png/revision/latest/scale-to-width-down/342?cb=20190428131540"
+  },
+  {
+    "title": "Chapter 60",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/43/Kimetsu_no_Yaiba_CH60.png/revision/latest/scale-to-width-down/342?cb=20190428131548"
+  },
+  {
+    "title": "Chapter 61",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/45/Kimetsu_no_Yaiba_CH61.png/revision/latest/scale-to-width-down/350?cb=20190428131625"
+  },
+  {
+    "title": "Chapter 62",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/5/5c/Kimetsu_no_Yaiba_CH62.png/revision/latest/scale-to-width-down/342?cb=20190428131633"
+  },
+  {
+    "title": "Chapter 63",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/2f/Kimetsu_no_Yaiba_CH63.png/revision/latest/scale-to-width-down/342?cb=20190428131642"
+  },
+  {
+    "title": "Chapter 64",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/20/Kimetsu_no_Yaiba_CH64.png/revision/latest/scale-to-width-down/342?cb=20190428131650"
+  },
+  {
+    "title": "Chapter 65",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/39/Kimetsu_no_Yaiba_CH65.png/revision/latest/scale-to-width-down/342?cb=20190428131742"
+  },
+  {
+    "title": "Chapter 66",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/f0/Kimetsu_no_Yaiba_CH66.png/revision/latest/scale-to-width-down/342?cb=20190428131705"
+  },
+  {
+    "title": "Chapter 67",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/a/ab/Kimetsu_no_Yaiba_CH67.png/revision/latest/scale-to-width-down/342?cb=20190428131714"
+  },
+  {
+    "title": "Chapter 68",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c9/Kimetsu_no_Yaiba_CH68.png/revision/latest/scale-to-width-down/342?cb=20190428131722"
+  },
+  {
+    "title": "Chapter 69",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/31/Kimetsu_no_Yaiba_CH69.png/revision/latest/scale-to-width-down/342?cb=20190428131730"
+  },
+  {
+    "title": "Episode 26",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c0/Episode_26.png/revision/latest/scale-to-width-down/350?cb=20190928165627"
+  },
+  {
+    "title": "Kimetsu no Yaiba: The Movie - Mugen Train",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/b2/Mugen_Train_Key_Visual.png/revision/latest/scale-to-width-down/350?cb=20191117152426"
+  }
 ]

@@ -1,4 +1,10 @@
 [
-  { "pageid": 356, "title": "Demon Slayer Corps" },
-  { "pageid": 540, "title": "Twelve Kizuki" }
+  {
+    "title": "Demon Slayer Corps",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/dd/Demon_Slayer_Corps.png/revision/latest/scale-to-width-down/350?cb=20190426190741"
+  },
+  {
+    "title": "Twelve Kizuki",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/3c/Twelve_Demon_Moons.png/revision/latest/scale-to-width-down/350?cb=20190619043816"
+  }
 ]

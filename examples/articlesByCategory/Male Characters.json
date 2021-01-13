@@ -1,72 +1,282 @@
 [
-  { "pageid": 571, "title": "Akaza" },
-  { "pageid": 19390, "title": "Aoba Hashibira" },
-  { "pageid": 800, "title": "Doma" },
-  { "pageid": 542, "title": "Enmu" },
-  { "pageid": 23730, "title": "Flute Demon" },
-  { "pageid": 837, "title": "Genya Shinazugawa" },
-  { "pageid": 135, "title": "Giyu Tomioka" },
-  { "pageid": 1875, "title": "Goto" },
-  { "pageid": 804, "title": "Gyokko" },
-  { "pageid": 368, "title": "Gyomei Himejima" },
-  { "pageid": 725, "title": "Gyutaro" },
-  { "pageid": 24260, "title": "Hairo" },
-  { "pageid": 268, "title": "Hand Demon" },
-  { "pageid": 802, "title": "Hantengu" },
-  { "pageid": 2929, "title": "Horned Demon" },
-  { "pageid": 140, "title": "Hotaru Haganezuka" },
-  { "pageid": 261, "title": "Inosuke Hashibira" },
-  { "pageid": 698, "title": "Jigoro Kuwajima" },
-  { "pageid": 376, "title": "Kagaya Ubuyashiki" },
-  { "pageid": 1465, "title": "Kaigaku" },
-  { "pageid": 3576, "title": "Kamanue" },
-  { "pageid": 19384, "title": "Kanata Kamado" },
-  { "pageid": 142, "title": "Kazumi" },
-  { "pageid": 1926, "title": "Keizo" },
-  { "pageid": 1487, "title": "Kiriya Ubuyashiki" },
-  { "pageid": 2378, "title": "Kiyoshi" },
-  { "pageid": 798, "title": "Kokushibo" },
-  { "pageid": 1050, "title": "Kotetsu" },
-  { "pageid": 553, "title": "Kozo Kanamori" },
-  { "pageid": 545, "title": "Kyogai" },
-  { "pageid": 362, "title": "Kyojuro Rengoku" },
-  { "pageid": 5051, "title": "Masachika Kumeno" },
-  { "pageid": 4971, "title": "Matazo" },
-  { "pageid": 370, "title": "Muichiro Tokito" },
-  { "pageid": 686, "title": "Murata" },
-  { "pageid": 138, "title": "Muzan Kibutsuji" },
-  { "pageid": 372, "title": "Obanai Iguro" },
-  { "pageid": 3572, "title": "Rokuro" },
-  { "pageid": 434, "title": "Rokuta Kamado" },
-  { "pageid": 538, "title": "Rui" },
-  { "pageid": 144, "title": "Sabito" },
-  { "pageid": 1456, "title": "Saburo" },
-  { "pageid": 137, "title": "Sakonji Urokodaki" },
-  { "pageid": 374, "title": "Sanemi Shinazugawa" },
-  { "pageid": 603, "title": "Senjuro Rengoku" },
-  { "pageid": 431, "title": "Shigeru Kamado" },
-  { "pageid": 606, "title": "Shinjuro Rengoku" },
-  { "pageid": 2112, "title": "Shoichi" },
-  { "pageid": 689, "title": "Spider Demon (Father)" },
-  { "pageid": 692, "title": "Spider Demon (Son)" },
-  { "pageid": 19395, "title": "Sumihiko Kamado" },
-  { "pageid": 3514, "title": "Sumiyoshi" },
-  { "pageid": 271, "title": "Swamp Demon" },
-  { "pageid": 3496, "title": "Takaharu" },
-  { "pageid": 424, "title": "Takeo Kamado" },
-  { "pageid": 132, "title": "Tanjiro Kamado" },
-  { "pageid": 560, "title": "Tanjuro Kamado" },
-  { "pageid": 841, "title": "Tecchin Tecchikawahara" },
-  { "pageid": 458, "title": "Temple Demon" },
-  { "pageid": 364, "title": "Tengen Uzui" },
-  { "pageid": 4103, "title": "Tetsuido" },
-  { "pageid": 2926, "title": "Tongue Demon" },
-  { "pageid": 9939, "title": "Toyo" },
-  { "pageid": 3573, "title": "Wakuraba" },
-  { "pageid": 273, "title": "Yahaba" },
-  { "pageid": 6240, "title": "Yoriichi Tsugikuni" },
-  { "pageid": 19375, "title": "Yoshiteru Agatsuma" },
-  { "pageid": 2215, "title": "Yuichiro Tokito" },
-  { "pageid": 265, "title": "Yushiro" },
-  { "pageid": 259, "title": "Zenitsu Agatsuma" }
+  {
+    "title": "Akaza",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/bf/Akaza_anime.png/revision/latest/scale-to-width-down/350?cb=20201027070546"
+  },
+  {
+    "title": "Aoba Hashibira",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/43/Aoba_Hashibira_profile_%28colored%29.png/revision/latest/scale-to-width-down/350?cb=20200519025512"
+  },
+  {
+    "title": "Doma",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/5/58/Doma_colored_body_3.png/revision/latest/scale-to-width-down/350?cb=20200526231706"
+  },
+  {
+    "title": "Enmu",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/5/56/Enmu_profile_anime.png/revision/latest/scale-to-width-down/350?cb=20191222072849"
+  },
+  {
+    "title": "Flute Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/82/Flute_Demon_Manga.png/revision/latest/scale-to-width-down/350?cb=20201018101922"
+  },
+  {
+    "title": "Genya Shinazugawa",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/b9/Genya_Anime.png/revision/latest/scale-to-width-down/350?cb=20191220221437"
+  },
+  {
+    "title": "Giyu Tomioka",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/43/Giyu_anime_design.png/revision/latest/scale-to-width-down/350?cb=20190831073602"
+  },
+  {
+    "title": "Goto",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/7/77/Goto_Anime.png/revision/latest/scale-to-width-down/350?cb=20210107214115"
+  },
+  {
+    "title": "Gyokko",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/05/Gyokko.png/revision/latest/scale-to-width-down/350?cb=20190731214018"
+  },
+  {
+    "title": "Gyomei Himejima",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/85/Gyomei_anime.png/revision/latest/scale-to-width-down/350?cb=20200317170337"
+  },
+  {
+    "title": "Gyutaro",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/fb/Gyutaro_colored_profile_3.png/revision/latest/scale-to-width-down/350?cb=20191023131717"
+  },
+  {
+    "title": "Hairo",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/08/Hairo_body.png/revision/latest/scale-to-width-down/350?cb=20201217025903"
+  },
+  {
+    "title": "Hand Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/3e/Hand_Demon_about_to_kill_Sabito.png/revision/latest/scale-to-width-down/350?cb=20190427171611"
+  },
+  {
+    "title": "Hantengu",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/fd/Hantengu_body.png/revision/latest/scale-to-width-down/350?cb=20180707155617"
+  },
+  {
+    "title": "Horned Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/6/64/Horned_Demon.png/revision/latest/scale-to-width-down/350?cb=20190622174617"
+  },
+  {
+    "title": "Hotaru Haganezuka",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/1/14/Hotaru_recognizing_Tanjiro_as_a_Child_of_Brightness.png/revision/latest/scale-to-width-down/350?cb=20191023084547"
+  },
+  {
+    "title": "Inosuke Hashibira",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/94/Inosuke_anime_design.png/revision/latest/scale-to-width-down/350?cb=20181128204238"
+  },
+  {
+    "title": "Jigoro Kuwajima",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/5/58/Jigoro_anime.png/revision/latest/scale-to-width-down/350?cb=20190727172303"
+  },
+  {
+    "title": "Kagaya Ubuyashiki",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/a/aa/Kagaya_anime.png/revision/latest/scale-to-width-down/350?cb=20200303193448"
+  },
+  {
+    "title": "Kaigaku",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/1/10/Kaigaku_colored_body.png/revision/latest/scale-to-width-down/350?cb=20190128205949"
+  },
+  {
+    "title": "Kamanue",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/de/Kamanue_called_in_the_Dimentional_Infinity_Fortress.png/revision/latest/scale-to-width-down/350?cb=20190928170257"
+  },
+  {
+    "title": "Kanata Kamado",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c3/Kanata_Kamado_colored_body.png/revision/latest/scale-to-width-down/262?cb=20200518095602"
+  },
+  {
+    "title": "Kazumi",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/bb/Kazumi_anime.png/revision/latest/scale-to-width-down/350?cb=20190504165245"
+  },
+  {
+    "title": "Keizo",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/99/Keizo_colored_profile.png/revision/latest/scale-to-width-down/346?cb=20200228192219"
+  },
+  {
+    "title": "Kiriya Ubuyashiki",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e8/Kiriya_anime.png/revision/latest/scale-to-width-down/350?cb=20190427173026"
+  },
+  {
+    "title": "Kiyoshi",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/7/77/Kiyoshi.png/revision/latest/scale-to-width-down/350?cb=20190622165911"
+  },
+  {
+    "title": "Kokushibo",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/f3/Kokushibo_colored_body.png/revision/latest/scale-to-width-down/336?cb=20200413041714"
+  },
+  {
+    "title": "Kotetsu",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/96/Kotetsu_profile_pic.png/revision/latest/scale-to-width-down/350?cb=20200405183858"
+  },
+  {
+    "title": "Kozo Kanamori",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/4c/Kanamori_introducing_himself.png/revision/latest/scale-to-width-down/350?cb=20190921171208"
+  },
+  {
+    "title": "Kyogai",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/db/Kyogai.png/revision/latest/scale-to-width-down/350?cb=20191023121412"
+  },
+  {
+    "title": "Kyojuro Rengoku",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/fd/Kyojuro_anime.png/revision/latest/scale-to-width-down/350?cb=20191117152140"
+  },
+  {
+    "title": "Masachika Kumeno",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c1/Masachika_Kumeno.png/revision/latest/scale-to-width-down/334?cb=20190824205430"
+  },
+  {
+    "title": "Matazo",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/a/a8/Matazo.png/revision/latest/scale-to-width-down/326?cb=20190822193332"
+  },
+  {
+    "title": "Muichiro Tokito",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/f7/Muichiro_anime.png/revision/latest/scale-to-width-down/350?cb=20190831171605"
+  },
+  {
+    "title": "Murata",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/27/Murata_anime.png/revision/latest/scale-to-width-down/350?cb=20190713165713"
+  },
+  {
+    "title": "Muzan Kibutsuji",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/43/Muzan_encountering_Tanjiro.png/revision/latest/scale-to-width-down/350?cb=20190518181646"
+  },
+  {
+    "title": "Obanai Iguro",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/b2/Obanai_anime.png/revision/latest/scale-to-width-down/350?cb=20190831171536"
+  },
+  {
+    "title": "Rokuro",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/5/5a/Rokuro_called_in_the_Dimentional_Infinity_Fortress.png/revision/latest/scale-to-width-down/281?cb=20200303201145"
+  },
+  {
+    "title": "Rokuta Kamado",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/6/67/Rokuta_Kamado_anime.png/revision/latest/scale-to-width-down/350?cb=20190406195415"
+  },
+  {
+    "title": "Rui",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/01/Rui_full_view.png/revision/latest/scale-to-width-down/350?cb=20190713170621"
+  },
+  {
+    "title": "Sabito",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/1/1a/Sabito_Anime.png/revision/latest/scale-to-width-down/350?cb=20191023135421"
+  },
+  {
+    "title": "Saburo",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/d2/Saburo_anime.png/revision/latest/scale-to-width-down/350?cb=20190406195813"
+  },
+  {
+    "title": "Sakonji Urokodaki",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/f0/Sakonji_Anime.png/revision/latest/scale-to-width-down/314?cb=20191023021633"
+  },
+  {
+    "title": "Sanemi Shinazugawa",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/cc/Sanemi_anime.png/revision/latest/scale-to-width-down/350?cb=20190831171507"
+  },
+  {
+    "title": "Senjuro Rengoku",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/85/Senjuro_anime.png/revision/latest/scale-to-width-down/350?cb=20201025191554"
+  },
+  {
+    "title": "Shigeru Kamado",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/05/Shigeru_Kamado_anime.png/revision/latest/scale-to-width-down/350?cb=20190406195154"
+  },
+  {
+    "title": "Shinjuro Rengoku",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/4/47/Shinjuro_yells_at_Tanjiro.png/revision/latest/scale-to-width-down/350?cb=20170707173453"
+  },
+  {
+    "title": "Shoichi",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/00/Shoichi.png/revision/latest/scale-to-width-down/350?cb=20190615164815"
+  },
+  {
+    "title": "Spider Demon (Father)",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/d0/Father_Spider_Demon_looking_for_Inosuke.png/revision/latest/scale-to-width-down/350?cb=20190803164915"
+  },
+  {
+    "title": "Spider Demon (Son)",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/1/14/Son_Spider_Demon_anime.png/revision/latest/scale-to-width-down/350?cb=20190727171155"
+  },
+  {
+    "title": "Sumihiko Kamado",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/b/bd/Sumihiko_colored_body.png/revision/latest/scale-to-width-down/231?cb=20200518100355"
+  },
+  {
+    "title": "Sumiyoshi",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/89/Sumiyoshi_profile_2.png/revision/latest/scale-to-width-down/350?cb=20200228040424"
+  },
+  {
+    "title": "Swamp Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/8/8b/Swamp_Demon.png/revision/latest/scale-to-width-down/350?cb=20190511165001"
+  },
+  {
+    "title": "Takaharu",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/0e/Takaharu_Profile_Manga.png/revision/latest/scale-to-width-down/350?cb=20190710031323"
+  },
+  {
+    "title": "Takeo Kamado",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/29/Takeo_Kamado_anime.png/revision/latest/scale-to-width-down/350?cb=20190406194951"
+  },
+  {
+    "title": "Tanjiro Kamado",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c7/Tanjiro_anime_design.png/revision/latest/scale-to-width-down/350?cb=20181128204204"
+  },
+  {
+    "title": "Tanjuro Kamado",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c3/Tanjuro_anime.png/revision/latest/scale-to-width-down/350?cb=20190810175848"
+  },
+  {
+    "title": "Tecchin Tecchikawahara",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/06/Tecchin_profile_pic.png/revision/latest/scale-to-width-down/350?cb=20200131194301"
+  },
+  {
+    "title": "Temple Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/38/Temple_Demon_anime.png/revision/latest/scale-to-width-down/350?cb=20190413173517"
+  },
+  {
+    "title": "Tengen Uzui",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/07/Tengen_anime.png/revision/latest/scale-to-width-down/350?cb=20191024210335"
+  },
+  {
+    "title": "Tetsuido",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/28/Tetsuido_profile.png/revision/latest/scale-to-width-down/350?cb=20190727214014"
+  },
+  {
+    "title": "Tongue Demon",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/ca/Tongue_Demon.png/revision/latest/scale-to-width-down/350?cb=20190622174326"
+  },
+  {
+    "title": "Toyo",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/2/26/Toyo_Anime_Profile.png/revision/latest/scale-to-width-down/350?cb=20191129182516"
+  },
+  {
+    "title": "Wakuraba",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/9/98/Wakuraba_called_in_the_Dimentional_Infinity_Fortress.png/revision/latest/scale-to-width-down/350?cb=20190928170048"
+  },
+  {
+    "title": "Yahaba",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/3/37/Yahaba_Profile.png/revision/latest/scale-to-width-down/350?cb=20190525170733"
+  },
+  {
+    "title": "Yoriichi Tsugikuni",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/d/df/Yoriichi_colored_body.png/revision/latest/scale-to-width-down/350?cb=20200208141653"
+  },
+  {
+    "title": "Yoshiteru Agatsuma",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/c/c9/Yoshiteru_Agatsuma_profile_%28colored%29.png/revision/latest/scale-to-width-down/350?cb=20200519025745"
+  },
+  {
+    "title": "Yuichiro Tokito",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/f/f7/Yuichiro_colored_profile.png/revision/latest/scale-to-width-down/350?cb=20200110045212"
+  },
+  {
+    "title": "Yushiro",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/0/01/Yushiro_Anime.png/revision/latest/scale-to-width-down/350?cb=20190525170554"
+  },
+  {
+    "title": "Zenitsu Agatsuma",
+    "thumbnail": "https://static.wikia.nocookie.net/kimetsu-no-yaiba/images/e/e0/Zenitsu_anime_design.png/revision/latest/scale-to-width-down/350?cb=20181128204231"
+  }
 ]
