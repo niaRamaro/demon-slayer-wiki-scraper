@@ -9,6 +9,7 @@ async function getArticlesByCategory(category: string) {
       action: 'query',
       cmlimit: 500,
       cmtitle: `Category:${category}`,
+      cmprop: 'title',
       cmtype: 'page',
       format: 'json',
       list: 'categorymembers',
@@ -32,21 +33,20 @@ async function getArticlesByCategory(category: string) {
 export default async function scrapArticlesByCategory(
   categories: string[],
 ): Promise<void> {
-  const allArticles: { [key: string]: number } = {};
+  const allArticles: string[] = [];
   const filesToSave: Promise<void>[] = [];
 
   await asyncBatch(
     categories,
     (category) => getArticlesByCategory(category),
     (index, categoryArticles) => {
-      categoryArticles.forEach(({ pageid, title }) => {
-        allArticles[title] = pageid;
-      });
+      const titles = categoryArticles.map(({ title }) => title);
+      allArticles.push(...titles);
       filesToSave.push(
         saveJSON(
           fsConfig.directories.ARTICLES_BY_CATEGORY,
           categories[index],
-          categoryArticles,
+          titles,
         ),
       );
     },

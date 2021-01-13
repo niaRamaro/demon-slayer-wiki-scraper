@@ -31,12 +31,10 @@ export default async function addCategoryArticlesThumbnail(
 
   categories.forEach((category) => {
     const formatedCategory = formatFileName(category);
-    const articlesByCategory: { title: string }[] = readJSON(
+    const articlesByCategory: string[] = readJSON(
       `${dumpDirectoryName}/${fsConfig.directories.ARTICLES_BY_CATEGORY}/${formatedCategory}`,
     );
-
-    const articleTitles = articlesByCategory.map(({ title }) => title);
-    const articlesWithThumbnail = addTArticesThumbnail(articleTitles);
+    const articlesWithThumbnail = addTArticesThumbnail(articlesByCategory);
 
     filesToSave.push(
       saveJSON(

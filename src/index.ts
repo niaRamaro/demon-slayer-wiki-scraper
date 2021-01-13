@@ -18,18 +18,17 @@ async function scrap() {
   );
   await scrapArticlesByCategory(categories);
 
-  const articles: { [key: string]: number }[] = readJSON(
+  const articles: string[] = readJSON(
     `${dumpDirectoryName}/${fsConfig.files.ARTICLES}`,
   );
-  const articleTitles = Object.keys(articles);
 
   console.log('=== GET ARTICLES CONTENT ===');
-  await scrapArticlesContent(articleTitles);
+  await scrapArticlesContent(articles);
 
   console.log('=== GENERATE ARTICLES HTML ===');
   console.log('=== ADD ARTICLES THUMBNAIL ===');
   await Promise.all([
-    generateArticlesHtml(articleTitles),
+    generateArticlesHtml(articles),
     addCategoryArticlesThumbnail(categories),
   ]);
 }
