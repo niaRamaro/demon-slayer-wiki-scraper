@@ -17,7 +17,6 @@ export const fsConfig = {
     ARTICLES: 'articles',
     CATEGORIES: 'categories',
     CATEGORIES_TREE: 'categoriesTree',
-    IMAGES_URLS: 'imagesUrls',
   },
   directories: {
     ARTICLES_CONTENT: 'articlesContent',

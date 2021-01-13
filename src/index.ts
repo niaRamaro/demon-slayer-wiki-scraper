@@ -1,7 +1,6 @@
 import scrapArticlesByCategory from './scrapers/articlesByCategory';
 import scrapArticlesContent from './scrapers/articlesContent';
 import scrapCategories from './scrapers/categories';
-import scrapImagesUrlByArticle from './scrapers/imagesUrlByArticle';
 import { fsConfig } from './config';
 import { getDumpDirectoryName, readJSON } from './helpers';
 
@@ -24,9 +23,6 @@ async function scrap() {
 
   console.log('=== GET ARTICLES CONTENT ===');
   await scrapArticlesContent(articleTitles);
-
-  console.log('=== GET IMAGES URL BY ARTICLE ===');
-  await scrapImagesUrlByArticle(articleTitles);
 }
 
 scrap();
