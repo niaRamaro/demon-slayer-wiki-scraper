@@ -3,7 +3,7 @@ import axios from 'axios';
 import { apiConfig, fsConfig } from '../config';
 import { saveJSON, asyncBatch } from '../helpers';
 
-const formatedCategories: { category: string; subCategories: string[] }[] = [];
+const subCategoriesMap: { [key: string]: string[] } = {};
 const allSubCategories: string[] = [];
 
 async function getSubCategories(category: string): Promise<string[]> {
@@ -45,10 +45,7 @@ async function formatCategories(
     (index: number, subCategories: string[]) => {
       if (subCategories.length || keepEmptyParents) {
         const category = categories[index];
-        formatedCategories.push({
-          category,
-          subCategories,
-        });
+        subCategoriesMap[category] = subCategories;
         allSubCategories.push(...subCategories);
       }
     },
@@ -63,7 +60,7 @@ export default async function scrapCategories(): Promise<void> {
 
   const allCategories = [...apiConfig.CATEGORIES, ...uniqueSubCategories];
   await Promise.all([
-    saveJSON('', fsConfig.files.CATEGORIES_TREE, formatedCategories),
+    saveJSON('', fsConfig.files.SUB_CATEGORIES, subCategoriesMap),
     saveJSON('', fsConfig.files.CATEGORIES, Array.from(new Set(allCategories))),
   ]);
 }
