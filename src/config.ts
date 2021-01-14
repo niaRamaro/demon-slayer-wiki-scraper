@@ -18,6 +18,7 @@ export const fsConfig = {
     CATEGORIES: 'categories',
     ROOT_CATEGORIES: 'rootCategories',
     SUB_CATEGORIES: 'subCategories',
+    IMAGES: 'images',
   },
   directories: {
     ARTICLES_BY_CATEGORY: 'articlesByCategory',

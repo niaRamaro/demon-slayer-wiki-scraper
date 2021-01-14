@@ -2,7 +2,11 @@ import axios from 'axios';
 
 import { apiConfig, fsConfig } from '../config';
 import { asyncBatch, saveJSON } from '../helpers';
-import { removeEditButtons, replaceImageSrc } from '../htmlContentHelpers';
+import {
+  extractImageUrls,
+  removeEditButtons,
+  replaceImageSrc,
+} from '../htmlContentHelpers';
 
 type ArticleContent = {
   title: string;
@@ -38,16 +42,25 @@ export default async function scrapArticlesContent(
   articles: string[],
 ): Promise<void> {
   const filesToSave: Promise<void>[] = [];
+  const images: { [key: string]: string } = {};
+
+  function extractArticleImages(html: string): void {
+    const articleImages = extractImageUrls(html);
+    articleImages.forEach(({ name, url }) => {
+      images[name] = url;
+    });
+  }
 
   await asyncBatch<string, ArticleContent>(
     articles,
     (title) => getArticle(title),
     (index, [content]) => {
-      const { text, ...rest } = content;
+      const { text } = content;
+      extractArticleImages(text['*']);
       const article = {
-        ...rest,
         html: formatArticleContent(text['*']),
       };
+
       filesToSave.push(
         saveJSON(
           fsConfig.directories.ARTICLES_CONTENT,
@@ -58,5 +71,8 @@ export default async function scrapArticlesContent(
     },
   );
 
-  await Promise.all(filesToSave);
+  await Promise.all([
+    ...filesToSave,
+    saveJSON('', fsConfig.files.IMAGES, images),
+  ]);
 }

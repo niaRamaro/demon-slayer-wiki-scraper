@@ -1,6 +1,12 @@
 import cheerio from 'cheerio';
 
+export type Image = {
+  name: string;
+  url: string;
+};
+
 const imgAttributesToRemove = [
+  'srcset',
   'data-src',
   'data-image-name',
   'data-image-key',
@@ -26,15 +32,28 @@ export function removeEditButtons(html: string): string {
 
 export function replaceImageSrc(html: string): string {
   const $ = cheerio.load(html);
-  const images = $('img.lazyload');
 
-  images.each((i, image) => {
-    const url = $(image).attr('data-src');
-    $(image).attr('src', url || '');
+  $('img').each((i, image) => {
+    const url = $(image).attr('data-image-name');
+    $(image).attr('src', url ? `/images/${url}` : '');
     imgAttributesToRemove.forEach((attr) => {
       $(image).removeAttr(attr);
     });
   });
 
   return $('body').html() || '';
+}
+
+export function extractImageUrls(html: string): Image[] {
+  const imageUrls: Image[] = [];
+
+  const $ = cheerio.load(html);
+  $('img').each((i, image) => {
+    const url = $(image).attr('data-src') || $(image).attr('src') || '';
+    const name = $(image).attr('data-image-name') || '';
+
+    imageUrls.push({ name, url });
+  });
+
+  return imageUrls;
 }
