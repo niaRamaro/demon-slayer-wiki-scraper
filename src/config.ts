@@ -16,13 +16,15 @@ export const fsConfig = {
   files: {
     ARTICLES: 'articles',
     CATEGORIES: 'categories',
+    FAILED_IMAGE_DOWNLOADS: 'failedImageDownloads',
+    IMAGES: 'images',
     ROOT_CATEGORIES: 'rootCategories',
     SUB_CATEGORIES: 'subCategories',
-    IMAGES: 'images',
   },
   directories: {
     ARTICLES_BY_CATEGORY: 'articlesByCategory',
     ARTICLES_CONTENT: 'articlesContent',
     HTML: 'html',
+    IMAGES: 'images',
   },
 };

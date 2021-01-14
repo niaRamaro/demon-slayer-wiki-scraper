@@ -1,10 +1,12 @@
 import fs from 'fs';
 import path from 'path';
 
-export function formatFileName(fileName: string): string {
+export function formatFileName(fileName = ''): string {
   const rules = [
     ['/', '++'],
     [':', '--'],
+    ['"', '=='],
+    ['?', '+-+'],
   ];
 
   return rules.reduce(
@@ -27,12 +29,15 @@ export function getDumpDirectoryName(): string {
   return `${today.getFullYear()}-${getMonth(today)}-${today.getDate()}`;
 }
 
-export function saveFile(filePath: string, content: string): Promise<void> {
-  const directoryName = path.dirname(filePath);
-
+export function createDirectory(directoryName: string): void {
   if (!fs.existsSync(directoryName)) {
     fs.mkdirSync(directoryName, { recursive: true });
   }
+}
+
+export function saveFile(filePath: string, content: string): Promise<void> {
+  const directoryName = path.dirname(filePath);
+  createDirectory(directoryName);
 
   return new Promise((resolve) => {
     fs.writeFile(filePath, content, {}, () => {

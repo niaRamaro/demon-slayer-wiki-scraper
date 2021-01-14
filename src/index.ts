@@ -1,5 +1,6 @@
 import {
   addCategoryArticlesThumbnail,
+  downloadImages,
   generateArticlesHtml,
   scrapArticlesByCategory,
   scrapArticlesContent,
@@ -30,11 +31,17 @@ async function scrap() {
   console.log('=== GET ARTICLES CONTENT ===');
   await scrapArticlesContent(articles);
 
+  const images: { [key: string]: string } = readJSON(
+    `${dumpDirectoryName}/${fsConfig.files.IMAGES}`,
+  );
+
   console.log('=== GENERATE ARTICLES HTML ===');
   console.log('=== ADD ARTICLES THUMBNAIL ===');
+  console.log('=== DOWNLOAD IMAGES ===');
   await Promise.all([
     generateArticlesHtml(articles),
     addCategoryArticlesThumbnail(categories),
+    downloadImages(images),
   ]);
 }
 

@@ -55,19 +55,21 @@ export default async function scrapArticlesContent(
     articles,
     (title) => getArticle(title),
     (index, [content]) => {
-      const { text } = content;
-      extractArticleImages(text['*']);
-      const article = {
-        html: formatArticleContent(text['*']),
-      };
+      if (content) {
+        const { text } = content;
+        extractArticleImages(text['*']);
+        const article = {
+          html: formatArticleContent(text['*']),
+        };
 
-      filesToSave.push(
-        saveJSON(
-          fsConfig.directories.ARTICLES_CONTENT,
-          articles[index],
-          article,
-        ),
-      );
+        filesToSave.push(
+          saveJSON(
+            fsConfig.directories.ARTICLES_CONTENT,
+            articles[index],
+            article,
+          ),
+        );
+      }
     },
   );
 
