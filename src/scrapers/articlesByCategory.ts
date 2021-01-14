@@ -52,6 +52,8 @@ export default async function scrapArticlesByCategory(
     },
   );
 
-  await Promise.all(filesToSave);
-  await saveJSON('', fsConfig.files.ARTICLES, allArticles);
+  await Promise.all([
+    ...filesToSave,
+    saveJSON('', fsConfig.files.ARTICLES, Array.from(new Set(allArticles))),
+  ]);
 }
