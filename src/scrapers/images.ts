@@ -36,8 +36,8 @@ async function downloadImage(name: string, url: string): Promise<unknown[]> {
   } catch (e) {
     return new Promise((resolve) => {
       failedImageDownloads[name] = url;
-      logger.info({
-        message: `Filed to fetch ${name}`,
+      logger.warn({
+        message: `Failed to fetch ${name}`,
         label: logLabel,
       });
       resolve([]);
