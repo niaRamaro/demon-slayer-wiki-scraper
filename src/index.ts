@@ -1,4 +1,6 @@
 /* eslint-disable no-console */
+import { readdirSync } from 'fs';
+
 import {
   addCategoryArticlesThumbnail,
   downloadImages,
@@ -10,9 +12,27 @@ import {
 import { apiConfig, fsConfig } from './config';
 import { basicHelpers, fsHelpers } from './helpers';
 
-async function scrap() {
-  const dumpDirectoryName = basicHelpers.getDumpDirectoryName();
+const dumpDirectoryName = basicHelpers.getDumpDirectoryName();
 
+function showStats(
+  categoriesCount: number,
+  articlesCount: number,
+  imagesCount: number,
+) {
+  console.log(`Categories : ${categoriesCount}`);
+
+  const savedArticles = readdirSync(
+    `${dumpDirectoryName}/${fsConfig.directories.ARTICLES_CONTENT}`,
+  );
+  const savedImages = readdirSync(
+    `${dumpDirectoryName}/${fsConfig.directories.IMAGES}`,
+  );
+
+  console.log(`Articles : ${savedArticles.length}/${articlesCount}`);
+  console.log(`Images : ${savedImages.length}/${imagesCount}`);
+}
+
+async function scrap() {
   console.log('=== SAVING ROOT CATEGORIES ===');
   fsHelpers.saveJSON('', fsConfig.files.ROOT_CATEGORIES, apiConfig.CATEGORIES);
 
@@ -44,6 +64,9 @@ async function scrap() {
     addCategoryArticlesThumbnail(categories),
     downloadImages(images),
   ]);
+
+  console.log('=== STATS ===');
+  showStats(categories.length, articles.length, Object.keys(images).length);
 }
 
 scrap();
