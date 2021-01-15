@@ -6,7 +6,7 @@ import { apiConfig, fsConfig } from '../config';
 import { asyncBatch, saveJSON } from '../helpers';
 import {
   extractImageUrls,
-  removeEditButtons,
+  removeUnnecessaryTags,
   replaceImageSrc,
 } from '../htmlContentHelpers';
 
@@ -40,7 +40,7 @@ async function getArticle(article: string) {
 }
 
 function formatArticleContent(html: string) {
-  return replaceImageSrc(removeEditButtons(html));
+  return replaceImageSrc(removeUnnecessaryTags(html));
 }
 
 export default async function scrapArticlesContent(

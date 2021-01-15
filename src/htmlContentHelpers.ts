@@ -49,9 +49,17 @@ export function getFirstImage(html: string): string {
     : '';
 }
 
-export function removeEditButtons(html: string): string {
+export function removeUnnecessaryTags(html: string): string {
   const $ = cheerio.load(html);
+  // Remove edit buttons
   $('span.mw-editsection').remove();
+
+  // Remove Navigation
+  $('table.toccolours').remove();
+  $('#Navigation').parent().remove();
+
+  // Remove Stub mention
+  $('#stub').remove();
 
   return $('body').html() || '';
 }
