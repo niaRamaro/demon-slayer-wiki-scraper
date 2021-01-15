@@ -29,7 +29,7 @@ async function scrap() {
   );
 
   console.log('=== GET ARTICLES CONTENT ===');
-  await scrapArticlesContent(articles);
+  await scrapArticlesContent(articles, categories);
 
   const images: { [key: string]: string } = readJSON(
     `${dumpDirectoryName}/${fsConfig.files.IMAGES}`,

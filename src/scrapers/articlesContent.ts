@@ -1,3 +1,5 @@
+/* eslint-disable function-paren-newline */
+/* eslint-disable implicit-arrow-linebreak */
 import axios from 'axios';
 
 import { apiConfig, fsConfig } from '../config';
@@ -8,12 +10,15 @@ import {
   replaceImageSrc,
 } from '../htmlContentHelpers';
 
+type ArticleProperty = {
+  '*': string;
+};
+
 type ArticleContent = {
   title: string;
   pageid: number;
-  text: {
-    '*': string;
-  };
+  text: ArticleProperty;
+  categories: ArticleProperty[];
 };
 
 async function getArticle(article: string) {
@@ -21,7 +26,7 @@ async function getArticle(article: string) {
     const params = {
       action: 'parse',
       page: article,
-      prop: 'text|categories|links|externallinks',
+      prop: 'text|categories',
       format: 'json',
     };
     console.log('Fetching article :', article);
@@ -40,6 +45,7 @@ function formatArticleContent(html: string) {
 
 export default async function scrapArticlesContent(
   articles: string[],
+  categories: string[],
 ): Promise<void> {
   const filesToSave: Promise<void>[] = [];
   const images: { [key: string]: string } = {};
@@ -51,14 +57,25 @@ export default async function scrapArticlesContent(
     });
   }
 
+  function getArticleCategories(rawCategories: ArticleProperty[] = []) {
+    const formatedCategories = rawCategories.map((category) =>
+      category['*'].split('_').join(' '),
+    );
+
+    return formatedCategories.filter((category) =>
+      categories.includes(category),
+    );
+  }
+
   await asyncBatch<string, ArticleContent>(
     articles,
     (title) => getArticle(title),
     (index, [content]) => {
       if (content) {
-        const { text } = content;
+        const { text, categories: rawCategories } = content;
         extractArticleImages(text['*']);
         const article = {
+          categories: getArticleCategories(rawCategories),
           html: formatArticleContent(text['*']),
         };
 
