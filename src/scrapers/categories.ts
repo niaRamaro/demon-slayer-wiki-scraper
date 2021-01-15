@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+import logger from '../helpers/logger';
 import { apiConfig, fsConfig } from '../config';
 import { saveJSON, asyncBatch } from '../helpers/helpers';
 
@@ -17,12 +18,16 @@ async function getSubCategories(category: string): Promise<string[]> {
       format: 'json',
       list: 'categorymembers',
     };
-    console.log('Fetching sub-categories of :', category);
     const {
       data,
     }: {
       data: { query: { categorymembers: { title: string }[] } };
     } = await axios.get(apiConfig.BASE_URL, { params });
+
+    logger.info({
+      message: `Fetched ${category}`,
+      label: 'CATEGORY',
+    });
 
     return data.query.categorymembers.map(
       ({ title }) =>
@@ -31,6 +36,11 @@ async function getSubCategories(category: string): Promise<string[]> {
       // eslint-disable-next-line function-paren-newline
     );
   } catch (error) {
+    logger.warn({
+      message: `Failed to fetched ${category}`,
+      label: 'CATEGORY',
+    });
+
     return [];
   }
 }
@@ -55,9 +65,7 @@ async function formatCategories(
 export default async function scrapCategories(): Promise<void> {
   await formatCategories(apiConfig.CATEGORIES, true);
   const uniqueSubCategories = Array.from(new Set(allSubCategories));
-
   await formatCategories(uniqueSubCategories, false);
-
   const allCategories = [...apiConfig.CATEGORIES, ...uniqueSubCategories];
   await Promise.all([
     saveJSON('', fsConfig.files.SUB_CATEGORIES, subCategoriesMap),

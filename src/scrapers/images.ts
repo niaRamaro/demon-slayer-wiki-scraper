@@ -8,10 +8,12 @@ import {
   getDumpDirectoryName,
   saveJSON,
 } from '../helpers/helpers';
+import logger from '../helpers/logger';
 
 const dumpDirectoryName = getDumpDirectoryName();
 const imageDirectory = `${dumpDirectoryName}/${fsConfig.directories.IMAGES}`;
 const failedImageDownloads: { [key: string]: string } = {};
+const logLabel = 'IMAGE';
 
 async function downloadImage(name: string, url: string): Promise<unknown[]> {
   try {
@@ -22,11 +24,17 @@ async function downloadImage(name: string, url: string): Promise<unknown[]> {
 
     return new Promise((resolve) => {
       writer.on('finish', () => {
-        console.log('Saved image :', name);
+        logger.info({
+          message: `Saved ${name}`,
+          label: logLabel,
+        });
         resolve([]);
       });
       writer.on('error', () => {
-        console.error('Failed to save image :', name);
+        logger.warn({
+          message: `Failed to save ${name}`,
+          label: logLabel,
+        });
         failedImageDownloads[name] = url;
         resolve([]);
       });
@@ -34,7 +42,10 @@ async function downloadImage(name: string, url: string): Promise<unknown[]> {
   } catch (e) {
     return new Promise((resolve) => {
       failedImageDownloads[name] = url;
-      console.error('Failed to save image :', name);
+      logger.info({
+        message: `Filed to fetch ${name}`,
+        label: logLabel,
+      });
       resolve([]);
     });
   }

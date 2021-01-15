@@ -1,5 +1,6 @@
 import axios from 'axios';
 
+import logger from '../helpers/logger';
 import { apiConfig, fsConfig } from '../config';
 import { asyncBatch, saveJSON } from '../helpers/helpers';
 
@@ -14,18 +15,26 @@ async function getArticlesByCategory(category: string) {
       format: 'json',
       list: 'categorymembers',
     };
-    console.log('Fetching articles list of :', category);
     const {
       data,
     }: {
       data: { query: { categorymembers: { title: string; pageid: number }[] } };
     } = await axios.get(apiConfig.BASE_URL, { params });
+    logger.info({
+      message: `Fetched ${category}`,
+      label: 'ARTICLES_BY_CATEGORY',
+    });
 
     return data.query.categorymembers.map(({ title, pageid }) => ({
       pageid,
       title,
     }));
   } catch (error) {
+    logger.warn({
+      message: `Failed to fetch ${category}`,
+      label: 'ARTICLES_BY_CATEGORY',
+    });
+
     return [];
   }
 }

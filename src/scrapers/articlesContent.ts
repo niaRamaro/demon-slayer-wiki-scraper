@@ -9,6 +9,7 @@ import {
   removeUnnecessaryTags,
   replaceImageSrc,
 } from '../helpers/htmlContentHelpers';
+import logger from '../helpers/logger';
 
 type ArticleProperty = {
   '*': string;
@@ -29,12 +30,19 @@ async function getArticle(article: string) {
       prop: 'text|categories',
       format: 'json',
     };
-    console.log('Fetching article :', article);
     const { data } = await axios.get(apiConfig.BASE_URL, { params });
-
+    logger.info({
+      message: `Fetched ${article}`,
+      label: 'ARTICLES_CONTENT',
+    });
     // We put inside a table just to match the required type for asyncBatch
     return [data.parse];
   } catch (error) {
+    logger.warn({
+      message: `Failed to fetch ${article}`,
+      label: 'ARTICLES_CONTENT',
+    });
+
     return [];
   }
 }

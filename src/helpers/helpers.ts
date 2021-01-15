@@ -1,6 +1,8 @@
 import fs from 'fs';
 import path from 'path';
 
+import logger from './logger';
+
 export function formatFileName(fileName = ''): string {
   const rules = [
     ['/', '++'],
@@ -41,7 +43,10 @@ export function saveFile(filePath: string, content: string): Promise<void> {
 
   return new Promise((resolve) => {
     fs.writeFile(filePath, content, {}, () => {
-      console.log('Saved at :', filePath);
+      logger.info({
+        message: `Saved at : ${filePath}`,
+        label: 'FILE',
+      });
       resolve();
     });
   });
