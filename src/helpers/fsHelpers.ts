@@ -1,5 +1,7 @@
 import { dirname } from 'path';
-import { existsSync, mkdirSync, readFileSync, writeFile } from 'fs';
+import {
+  existsSync, mkdirSync, readFileSync, writeFile,
+} from 'fs';
 
 import logger from './logger';
 import { getDumpDirectoryName } from './basicHelpers';
@@ -12,6 +14,7 @@ export function createDirectory(directoryName: string): void {
 
 export function formatFileName(fileName = ''): string {
   const rules = [
+    [' ', '_'],
     ['/', '++'],
     [':', '--'],
     ['"', '=='],

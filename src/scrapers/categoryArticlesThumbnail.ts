@@ -13,6 +13,7 @@ function addTArticesThumbnail(articleTitles: string[]) {
 
     return {
       title,
+      slug: formatedTitle,
       thumbnail,
     };
   });
