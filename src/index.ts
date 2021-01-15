@@ -8,37 +8,37 @@ import {
   scrapCategories,
 } from './scrapers';
 import { apiConfig, fsConfig } from './config';
-import { getDumpDirectoryName, readJSON, saveJSON } from './helpers/helpers';
+import { basicHelpers, fsHelpers } from './helpers';
 
 async function scrap() {
-  const dumpDirectoryName = getDumpDirectoryName();
+  const dumpDirectoryName = basicHelpers.getDumpDirectoryName();
 
   console.log('=== SAVING ROOT CATEGORIES ===');
-  saveJSON('', fsConfig.files.ROOT_CATEGORIES, apiConfig.CATEGORIES);
+  fsHelpers.saveJSON('', fsConfig.files.ROOT_CATEGORIES, apiConfig.CATEGORIES);
 
-  console.log('=== FORMAT CATEGORIES ===');
+  console.log('=== FORMATING CATEGORIES ===');
   await scrapCategories();
 
-  console.log('=== GET ARTICLES BY CATEGORIES ===');
-  const categories: string[] = readJSON(
+  console.log('=== GETTING ARTICLES BY CATEGORIES ===');
+  const categories: string[] = fsHelpers.readJSON(
     `${dumpDirectoryName}/${fsConfig.files.CATEGORIES}`,
   );
   await scrapArticlesByCategory(categories);
 
-  const articles: string[] = readJSON(
+  const articles: string[] = fsHelpers.readJSON(
     `${dumpDirectoryName}/${fsConfig.files.ARTICLES}`,
   );
 
-  console.log('=== GET ARTICLES CONTENT ===');
+  console.log('=== GETTING ARTICLES CONTENT ===');
   await scrapArticlesContent(articles, categories);
 
-  const images: { [key: string]: string } = readJSON(
+  const images: { [key: string]: string } = fsHelpers.readJSON(
     `${dumpDirectoryName}/${fsConfig.files.IMAGES}`,
   );
 
-  console.log('=== GENERATE ARTICLES HTML ===');
-  console.log('=== ADD ARTICLES THUMBNAIL ===');
-  console.log('=== DOWNLOAD IMAGES ===');
+  console.log('=== GENERATING ARTICLES HTML ===');
+  console.log('=== ADDING ARTICLES THUMBNAIL ===');
+  console.log('=== DOWNLOADING IMAGES ===');
   await Promise.all([
     generateArticlesHtml(articles),
     addCategoryArticlesThumbnail(categories),

@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-import logger from '../helpers/logger';
 import { apiConfig, fsConfig } from '../config';
-import { asyncBatch, saveJSON } from '../helpers/helpers';
+import { basicHelpers, fsHelpers, logger } from '../helpers';
 
 async function getArticlesByCategory(category: string) {
   try {
@@ -45,14 +44,14 @@ export default async function scrapArticlesByCategory(
   const allArticles: string[] = [];
   const filesToSave: Promise<void>[] = [];
 
-  await asyncBatch(
+  await basicHelpers.asyncBatch(
     categories,
     (category) => getArticlesByCategory(category),
     (index, categoryArticles) => {
       const titles = categoryArticles.map(({ title }) => title);
       allArticles.push(...titles);
       filesToSave.push(
-        saveJSON(
+        fsHelpers.saveJSON(
           fsConfig.directories.ARTICLES_BY_CATEGORY,
           categories[index],
           titles,
@@ -63,6 +62,10 @@ export default async function scrapArticlesByCategory(
 
   await Promise.all([
     ...filesToSave,
-    saveJSON('', fsConfig.files.ARTICLES, Array.from(new Set(allArticles))),
+    fsHelpers.saveJSON(
+      '',
+      fsConfig.files.ARTICLES,
+      Array.from(new Set(allArticles)),
+    ),
   ]);
 }

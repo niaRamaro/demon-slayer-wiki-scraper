@@ -1,8 +1,8 @@
 /* eslint-disable operator-linebreak */
 import cheerio from 'cheerio';
 
+import { formatFileName } from './fsHelpers';
 import { fsConfig } from '../config';
-import { formatFileName } from './helpers';
 
 export type Image = {
   name: string;

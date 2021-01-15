@@ -1,21 +1,15 @@
+import { basicHelpers, fsHelpers, htmlHelpers } from '../helpers';
 import { fsConfig } from '../config';
-import {
-  formatFileName,
-  getDumpDirectoryName,
-  readJSON,
-  saveJSON,
-} from '../helpers/helpers';
-import { getFirstImage } from '../helpers/htmlContentHelpers';
 
-const dumpDirectoryName = getDumpDirectoryName();
+const dumpDirectoryName = basicHelpers.getDumpDirectoryName();
 
 function addTArticesThumbnail(articleTitles: string[]) {
   return articleTitles.map((title) => {
-    const formatedTitle = formatFileName(title);
-    const articleContent: { html: string } = readJSON(
+    const formatedTitle = fsHelpers.formatFileName(title);
+    const articleContent: { html: string } = fsHelpers.readJSON(
       `${dumpDirectoryName}/${fsConfig.directories.ARTICLES_CONTENT}/${formatedTitle}`,
     );
-    const thumbnail = getFirstImage(articleContent.html);
+    const thumbnail = htmlHelpers.getFirstImage(articleContent.html);
 
     return {
       title,
@@ -30,14 +24,14 @@ export default async function addCategoryArticlesThumbnail(
   const filesToSave: Promise<void>[] = [];
 
   categories.forEach((category) => {
-    const formatedCategory = formatFileName(category);
-    const articlesByCategory: string[] = readJSON(
+    const formatedCategory = fsHelpers.formatFileName(category);
+    const articlesByCategory: string[] = fsHelpers.readJSON(
       `${dumpDirectoryName}/${fsConfig.directories.ARTICLES_BY_CATEGORY}/${formatedCategory}`,
     );
     const articlesWithThumbnail = addTArticesThumbnail(articlesByCategory);
 
     filesToSave.push(
-      saveJSON(
+      fsHelpers.saveJSON(
         fsConfig.directories.ARTICLES_BY_CATEGORY,
         formatedCategory,
         articlesWithThumbnail,

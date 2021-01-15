@@ -1,16 +1,10 @@
 import axios from 'axios';
 import { createWriteStream } from 'fs';
 
+import { basicHelpers, fsHelpers, logger } from '../helpers';
 import { fsConfig } from '../config';
-import {
-  asyncBatch,
-  createDirectory,
-  getDumpDirectoryName,
-  saveJSON,
-} from '../helpers/helpers';
-import logger from '../helpers/logger';
 
-const dumpDirectoryName = getDumpDirectoryName();
+const dumpDirectoryName = basicHelpers.getDumpDirectoryName();
 const imageDirectory = `${dumpDirectoryName}/${fsConfig.directories.IMAGES}`;
 const failedImageDownloads: { [key: string]: string } = {};
 const logLabel = 'IMAGE';
@@ -54,16 +48,16 @@ async function downloadImage(name: string, url: string): Promise<unknown[]> {
 export default async function downloadImages(images: {
   [key: string]: string;
 }): Promise<void> {
-  createDirectory(imageDirectory);
+  fsHelpers.createDirectory(imageDirectory);
 
-  await asyncBatch(
+  await basicHelpers.asyncBatch(
     Object.keys(images).filter((image) => image),
     (imageName) => downloadImage(imageName, images[imageName]),
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     (index, results) => {},
   );
 
-  await saveJSON(
+  await fsHelpers.saveJSON(
     '',
     fsConfig.files.FAILED_IMAGE_DOWNLOADS,
     failedImageDownloads,

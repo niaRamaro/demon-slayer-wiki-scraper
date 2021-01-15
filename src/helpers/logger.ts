@@ -2,7 +2,9 @@
 /* eslint-disable implicit-arrow-linebreak */
 import winston from 'winston';
 
-const filename = 'demon-slayer=scraper';
+import { getDumpDirectoryName } from './basicHelpers';
+
+const filename = getDumpDirectoryName();
 const logDirectory = 'logs';
 const logLevels = ['info', 'warn'];
 

@@ -1,12 +1,7 @@
+import { basicHelpers, fsHelpers } from '../helpers';
 import { fsConfig } from '../config';
-import {
-  formatFileName,
-  getDumpDirectoryName,
-  readJSON,
-  saveFile,
-} from '../helpers/helpers';
 
-const dumpDirectoryName = getDumpDirectoryName();
+const dumpDirectoryName = basicHelpers.getDumpDirectoryName();
 
 function saveHtml(title: string, html: string) {
   const content = `<!DOCTYPE html>
@@ -21,7 +16,7 @@ function saveHtml(title: string, html: string) {
 </body>
 </html>`;
 
-  saveFile(
+  fsHelpers.saveFile(
     `${dumpDirectoryName}/${fsConfig.directories.HTML}/${title}.html`,
     content,
   );
@@ -29,8 +24,8 @@ function saveHtml(title: string, html: string) {
 
 export default function generateArticlesHtml(articles: string[]): void {
   articles.forEach((title) => {
-    const formatedTitle = formatFileName(title);
-    const { html } = readJSON(
+    const formatedTitle = fsHelpers.formatFileName(title);
+    const { html } = fsHelpers.readJSON(
       `${dumpDirectoryName}/${fsConfig.directories.ARTICLES_CONTENT}/${formatedTitle}`,
     );
     saveHtml(formatedTitle, html);

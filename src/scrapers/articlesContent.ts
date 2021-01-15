@@ -3,13 +3,7 @@
 import axios from 'axios';
 
 import { apiConfig, fsConfig } from '../config';
-import { asyncBatch, saveJSON } from '../helpers/helpers';
-import {
-  extractImageUrls,
-  removeUnnecessaryTags,
-  replaceImageSrc,
-} from '../helpers/htmlContentHelpers';
-import logger from '../helpers/logger';
+import { basicHelpers, fsHelpers, htmlHelpers, logger } from '../helpers';
 
 type ArticleProperty = {
   '*': string;
@@ -48,7 +42,7 @@ async function getArticle(article: string) {
 }
 
 function formatArticleContent(html: string) {
-  return replaceImageSrc(removeUnnecessaryTags(html));
+  return htmlHelpers.replaceImageSrc(htmlHelpers.removeUnnecessaryTags(html));
 }
 
 export default async function scrapArticlesContent(
@@ -59,7 +53,7 @@ export default async function scrapArticlesContent(
   const images: { [key: string]: string } = {};
 
   function extractArticleImages(html: string): void {
-    const articleImages = extractImageUrls(html);
+    const articleImages = htmlHelpers.extractImageUrls(html);
     articleImages.forEach(({ name, url }) => {
       images[name] = url;
     });
@@ -75,7 +69,7 @@ export default async function scrapArticlesContent(
     );
   }
 
-  await asyncBatch<string, ArticleContent>(
+  await basicHelpers.asyncBatch<string, ArticleContent>(
     articles,
     (title) => getArticle(title),
     (index, [content]) => {
@@ -88,7 +82,7 @@ export default async function scrapArticlesContent(
         };
 
         filesToSave.push(
-          saveJSON(
+          fsHelpers.saveJSON(
             fsConfig.directories.ARTICLES_CONTENT,
             articles[index],
             article,
@@ -100,6 +94,6 @@ export default async function scrapArticlesContent(
 
   await Promise.all([
     ...filesToSave,
-    saveJSON('', fsConfig.files.IMAGES, images),
+    fsHelpers.saveJSON('', fsConfig.files.IMAGES, images),
   ]);
 }

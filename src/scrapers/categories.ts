@@ -1,8 +1,7 @@
 import axios from 'axios';
 
-import logger from '../helpers/logger';
 import { apiConfig, fsConfig } from '../config';
-import { saveJSON, asyncBatch } from '../helpers/helpers';
+import { basicHelpers, fsHelpers, logger } from '../helpers';
 
 const subCategoriesMap: { [key: string]: string[] } = {};
 const allSubCategories: string[] = [];
@@ -49,7 +48,7 @@ async function formatCategories(
   categories: string[],
   keepEmptyParents: boolean,
 ) {
-  await asyncBatch(
+  await basicHelpers.asyncBatch(
     categories,
     (category: string) => getSubCategories(category),
     (index: number, subCategories: string[]) => {
@@ -68,7 +67,11 @@ export default async function scrapCategories(): Promise<void> {
   await formatCategories(uniqueSubCategories, false);
   const allCategories = [...apiConfig.CATEGORIES, ...uniqueSubCategories];
   await Promise.all([
-    saveJSON('', fsConfig.files.SUB_CATEGORIES, subCategoriesMap),
-    saveJSON('', fsConfig.files.CATEGORIES, Array.from(new Set(allCategories))),
+    fsHelpers.saveJSON('', fsConfig.files.SUB_CATEGORIES, subCategoriesMap),
+    fsHelpers.saveJSON(
+      '',
+      fsConfig.files.CATEGORIES,
+      Array.from(new Set(allCategories)),
+    ),
   ]);
 }
