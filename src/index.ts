@@ -7,7 +7,7 @@ import {
   scrapCategories,
 } from './scrapers';
 import { apiConfig, fsConfig } from './config';
-import { getDumpDirectoryName, readJSON, saveJSON } from './helpers';
+import { getDumpDirectoryName, readJSON, saveJSON } from './helpers/helpers';
 
 async function scrap() {
   const dumpDirectoryName = getDumpDirectoryName();

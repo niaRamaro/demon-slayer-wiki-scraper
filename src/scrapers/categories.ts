@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 import { apiConfig, fsConfig } from '../config';
-import { saveJSON, asyncBatch } from '../helpers';
+import { saveJSON, asyncBatch } from '../helpers/helpers';
 
 const subCategoriesMap: { [key: string]: string[] } = {};
 const allSubCategories: string[] = [];

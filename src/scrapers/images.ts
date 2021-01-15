@@ -7,7 +7,7 @@ import {
   createDirectory,
   getDumpDirectoryName,
   saveJSON,
-} from '../helpers';
+} from '../helpers/helpers';
 
 const dumpDirectoryName = getDumpDirectoryName();
 const imageDirectory = `${dumpDirectoryName}/${fsConfig.directories.IMAGES}`;

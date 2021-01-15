@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 import { apiConfig, fsConfig } from '../config';
-import { asyncBatch, saveJSON } from '../helpers';
+import { asyncBatch, saveJSON } from '../helpers/helpers';
 
 async function getArticlesByCategory(category: string) {
   try {

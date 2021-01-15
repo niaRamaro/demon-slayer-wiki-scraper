@@ -4,7 +4,7 @@ import {
   getDumpDirectoryName,
   readJSON,
   saveFile,
-} from '../helpers';
+} from '../helpers/helpers';
 
 const dumpDirectoryName = getDumpDirectoryName();
 

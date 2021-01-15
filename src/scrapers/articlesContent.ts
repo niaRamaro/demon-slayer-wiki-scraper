@@ -3,12 +3,12 @@
 import axios from 'axios';
 
 import { apiConfig, fsConfig } from '../config';
-import { asyncBatch, saveJSON } from '../helpers';
+import { asyncBatch, saveJSON } from '../helpers/helpers';
 import {
   extractImageUrls,
   removeUnnecessaryTags,
   replaceImageSrc,
-} from '../htmlContentHelpers';
+} from '../helpers/htmlContentHelpers';
 
 type ArticleProperty = {
   '*': string;

@@ -4,8 +4,8 @@ import {
   getDumpDirectoryName,
   readJSON,
   saveJSON,
-} from '../helpers';
-import { getFirstImage } from '../htmlContentHelpers';
+} from '../helpers/helpers';
+import { getFirstImage } from '../helpers/htmlContentHelpers';
 
 const dumpDirectoryName = getDumpDirectoryName();
 
