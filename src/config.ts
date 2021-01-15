@@ -9,6 +9,7 @@ export const apiConfig = {
     'Relationships',
     'Story Arcs',
     'Synopses',
+    'Image Galleries',
   ],
 };
 
