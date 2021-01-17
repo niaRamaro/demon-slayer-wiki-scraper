@@ -5,6 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "ts-node-dev ./src/index.ts",
+    "extract": "ts-node-dev ./src/extract.ts && prettier -w ./dump/extract",
     "lint": "eslint . --ext .ts",
     "start": "tsc && node build/index"
   },
@@ -15,6 +16,8 @@
     "eslint": "^7.17.0",
     "eslint-config-airbnb-typescript": "^12.0.0",
     "eslint-plugin-import": "^2.22.0",
+    "husky": "^4.3.7",
+    "lint-staged": "^10.5.3",
     "prettier": "^2.2.1",
     "ts-node-dev": "^1.1.1",
     "typescript": "^4.1.3"

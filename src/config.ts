@@ -25,6 +25,7 @@ export const fsConfig = {
   directories: {
     ARTICLES_BY_CATEGORY: 'articlesByCategory',
     ARTICLES_CONTENT: 'articlesContent',
+    EXTRACT: 'extract',
     HTML: 'html',
     IMAGES: 'images',
   },
