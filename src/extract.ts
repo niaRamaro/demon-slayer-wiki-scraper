@@ -2,7 +2,11 @@
 import cheerio from 'cheerio';
 
 import { fsConfig } from './config';
-import { extractAside, extractNavigation } from './extractors';
+import {
+  extractAside,
+  extractNavigation,
+  extractReference,
+} from './extractors';
 import { getDumpDirectoryName } from './helpers/basicHelpers';
 import { formatFileName, readJSON, saveJSON } from './helpers/fsHelpers';
 
@@ -15,6 +19,7 @@ function extractArticleInfo(title: string, html: string) {
   return saveJSON(fsConfig.directories.EXTRACT, title, {
     navigation: extractNavigation($),
     aside: extractAside($),
+    reference: extractReference($),
   });
 }
 
