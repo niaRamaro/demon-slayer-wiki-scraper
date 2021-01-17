@@ -6,8 +6,7 @@ import { extractAside, extractNavigation } from './extractors';
 import { getDumpDirectoryName } from './helpers/basicHelpers';
 import { formatFileName, readJSON, saveJSON } from './helpers/fsHelpers';
 
-const category = 'Synopses';
-// const category = 'Demon Slayers';
+const category = 'Characters';
 const directory = getDumpDirectoryName();
 
 function extractArticleInfo(title: string, html: string) {
@@ -28,7 +27,6 @@ async function extract() {
 
   const filesToSave: any[] = [];
 
-  // articles.slice(21, 22).forEach(({ title }) => {
   articles.forEach(({ title }) => {
     const content: { html: string } = readJSON(
       `${directory}/${fsConfig.directories.ARTICLES_CONTENT}/${formatFileName(

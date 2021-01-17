@@ -8,16 +8,31 @@ type RowValue = {
   };
 };
 
-type AsideValue = {
+type Section = {
   title: string;
   rows: {
     label: string;
     values: RowValue[];
   }[];
 };
+
+type Aside = {
+  main: Main;
+  sections: Section[];
+};
+
+type Main = {
+  images: Image[];
+  sections: Section[];
+};
+
+type Image = {
+  [key: string]: string;
+};
+
 let $: any;
 
-function extractAsideRowValues(contents: any[]): RowValue[] {
+function extractRowValues(contents: any[]): RowValue[] {
   return contents.reduce((values: RowValue[], node: any) => {
     // Values are separated by <br> tag
     if (node.type === 'tag' && node.name === 'br') {
@@ -27,7 +42,7 @@ function extractAsideRowValues(contents: any[]): RowValue[] {
     }
 
     if ($(node).hasClass('mw-collapsible')) {
-      return extractAsideRowValues($(node).contents().get());
+      return extractRowValues($(node).contents().get());
     }
 
     const beforeLastValues = values.slice(0, -1);
@@ -57,47 +72,53 @@ function extractAsideRowValues(contents: any[]): RowValue[] {
   }, []);
 }
 
-export default function extractAside(cheerio: any): AsideValue[] {
+function extractSectionInfos(sectionNodes: any[]): Section[] {
+  return sectionNodes.map((content) => ({
+    title: $(content).find('h2').text(),
+    rows: $(content)
+      .find('div.pi-item')
+      .map((index: number, item: any) => {
+        const contents = $(item).find('.pi-data-value').contents().get();
+
+        return {
+          label: $(item).find('.pi-data-label').text(),
+          values: extractRowValues(contents),
+        };
+      })
+      .get(),
+  }));
+}
+
+function extractMainInfos(mainNode: any[]): Main {
+  const images = $(mainNode)
+    .find('figure.pi-image')
+    .get()
+    .reduce((formatedImages: Image, image: any) => {
+      const title = $(image).find('a').attr('title');
+      const url = $(image).find('img').attr('src');
+
+      return {
+        ...formatedImages,
+        [title]: url,
+      };
+    }, {});
+
+  return {
+    images,
+    sections: extractSectionInfos($(mainNode).get()),
+  };
+}
+
+export default function extractAside(cheerio: any): Aside {
   $ = cheerio;
-  const asides: AsideValue[] = [];
-  const sectionLess = $('aside > div.pi-item[data-source]');
 
-  if (sectionLess.length) {
-    $(sectionLess).each((index: number, section: any) => {
-      const contents = $(section).find('.pi-data-value').contents().get();
+  const mainNode = $('aside').clone();
+  $(mainNode).children('section').empty();
 
-      asides.push({
-        title: '',
-        rows: [
-          {
-            label: $(section).find('.pi-data-label').text(),
-            values: extractAsideRowValues(contents),
-          },
-        ],
-      });
-    });
-  }
+  const sectionNodes = $('aside > section').get();
 
-  const sections = $('aside > section');
-
-  if (sections.length) {
-    $(sections).each((i: number, section: any) => {
-      asides.push({
-        title: $(section).find('h2').text(),
-        rows: $(section)
-          .find('div.pi-item')
-          .map((index: number, item: any) => {
-            const contents = $(item).find('.pi-data-value').contents().get();
-
-            return {
-              label: $(item).find('.pi-data-label').text(),
-              values: extractAsideRowValues(contents),
-            };
-          })
-          .get(),
-      });
-    });
-  }
-
-  return asides;
+  return {
+    main: extractMainInfos(mainNode),
+    sections: extractSectionInfos(sectionNodes),
+  };
 }
